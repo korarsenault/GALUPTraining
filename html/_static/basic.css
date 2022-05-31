@@ -322,8 +322,9 @@ img.align-default, figure.align-default, .figure.align-default {
 
 }
 
-.card-body-docutils {
+#c2p {
     text-align: center;
+    color: blue;
 }
 
 /* -- sidebars -------------------------------------------------------------- */
