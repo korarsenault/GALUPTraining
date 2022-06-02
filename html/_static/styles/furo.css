@@ -2424,4 +2424,16 @@ ul.search li {
     display: inline-block;
     border-radius: 12px;
 }
+
+.column1 {
+    float: left;
+    width: 50%;
+  }
+  
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 /*# sourceMappingURL=furo.css.map*/

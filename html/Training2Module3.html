@@ -198,18 +198,16 @@
 <ul>
 <li><p>Spectral/Image indices are generally calculated using simple mathematical transformations (addition, subtraction, division) conducted on satellite bands of specific wavelength regions. Values of image indices can range from -1 - +1 (normalized difference indices), to arbitrary scales for other ratio-based indices. See <span class="raw-html-m2r"><a href="https://www.usgs.gov/core-science-systems/nli/landsat/landsat-surface-reflectance-derived-spectral-indices?qt-science_support_page_related_con=0#qt-science_support_page_related_con">this link</a></span> for a good introduction to indices that can be obtained using Landsat data.</p></li>
 <li><p>Some commonly used RS indices include</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">blockquote</span><span class="o">&gt;</span>
-<span class="n">Normalized</span> <span class="n">Difference</span> <span class="n">Vegetation</span> <span class="n">Index</span> <span class="p">(</span><span class="n">NDVI</span><span class="p">)</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
-<span class="n">Enhanced</span> <span class="n">Vegetation</span> <span class="n">Index</span> <span class="p">(</span><span class="n">EVI</span><span class="p">)</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
-<span class="n">Soil</span> <span class="n">Adjusted</span> <span class="n">Vegetation</span> <span class="n">Index</span> <span class="p">(</span><span class="n">SAVI</span><span class="p">)</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
-<span class="n">Modified</span> <span class="n">Soil</span> <span class="n">Adjusted</span> <span class="n">Vegetation</span> <span class="n">Index</span> <span class="p">(</span><span class="n">MSAVI</span><span class="p">)</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
-<span class="n">Normalized</span> <span class="n">Difference</span> <span class="n">Moisture</span> <span class="n">Index</span> <span class="p">(</span><span class="n">NDMI</span><span class="p">)</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
-<span class="n">Normalized</span> <span class="n">Burn</span> <span class="n">Ratio</span> <span class="p">(</span><span class="n">NBR</span><span class="p">)</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
-<span class="n">Normalized</span> <span class="n">Burn</span> <span class="n">Ratio</span> <span class="mi">2</span> <span class="p">(</span><span class="n">NBR2</span><span class="p">)</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
-<span class="n">Normalized</span> <span class="n">Difference</span> <span class="n">Snow</span> <span class="n">Index</span> <span class="p">(</span><span class="n">NDSI</span><span class="p">)</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">blockquote</span><span class="o">&gt;</span>
-</pre></div>
-</div>
+<blockquote>
+  Normalized Difference Vegetation Index (NDVI)<br>
+  Enhanced Vegetation Index (EVI)<br>
+  Soil Adjusted Vegetation Index (SAVI)<br>
+  Modified Soil Adjusted Vegetation Index (MSAVI)<br>
+  Normalized Difference Moisture Index (NDMI)<br>
+  Normalized Burn Ratio (NBR)<br>
+  Normalized Burn Ratio 2 (NBR2)<br>
+  Normalized Difference Snow Index (NDSI)<br>
+</blockquote>
 </li>
 <li><p>The Table below provides reflectances used to calculate the above indices.</p></li>
 </ul>
@@ -221,11 +219,7 @@
 <img src="https://user-images.githubusercontent.com/84922404/135468275-adaf7a44-b8f7-4d4e-9276-625a7a59f9d4.png" width="400"/>
 </p></li>
 </ul>
-<dl class="field-list simple">
-<dt class="field-odd">pushpin</dt>
-<dd class="field-odd"><p>A database of remote sensing indices and their respective sensors and areas of application are compiled <a class="reference external" href="https://www.indexdatabase.de/">here</a>.</p>
-</dd>
-</dl>
+<p>&#128204; A database of remote sensing indices and their respective sensors and areas of application are compiled <a class="reference external" href="https://www.indexdatabase.de/">here</a>.</p>
 </section>
 <section id="sources-for-preprocessed-rs-indices-for-regional-scale-applications">
 <h2>2. Sources for Preprocessed RS Indices for Regional-scale Applications<a class="headerlink" href="#sources-for-preprocessed-rs-indices-for-regional-scale-applications" title="Permalink to this headline">#</a></h2>
@@ -278,17 +272,15 @@
 <section id="environment-variables-available-on-google-earth-engine">
 <h2>3. Environment Variables Available on Google Earth Engine<a class="headerlink" href="#environment-variables-available-on-google-earth-engine" title="Permalink to this headline">#</a></h2>
 <ul>
-<li><p>In addition to satellite imagery and derived data, multiple environmental datasets are available on the GEE platform for ingestion into analytical processes. Commonly used enviornmental data include
-.. code-block:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">blockquote</span><span class="o">&gt;</span>
-<span class="n">TerraClimate</span><span class="p">:</span> <span class="n">Monthly</span> <span class="n">Climate</span> <span class="ow">and</span> <span class="n">Climatic</span> <span class="n">Water</span> <span class="n">Balance</span> <span class="p">(</span><span class="n">includes</span> <span class="n">precipitation</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">drought</span> <span class="n">severity</span> <span class="n">etc</span><span class="o">.</span><span class="p">)</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">"https://www.nature.com/articles/sdata2017191"</span><span class="o">&gt;</span><span class="n">Reference</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
- <span class="n">SRTM</span> <span class="n">Digital</span> <span class="n">Elevation</span> <span class="n">Data</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">"https://srtm.csi.cgiar.org/"</span><span class="o">&gt;</span><span class="n">Reference</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
- <span class="n">GCOM</span><span class="o">-</span><span class="n">C</span><span class="o">/</span><span class="n">SGLI</span> <span class="n">L3</span> <span class="n">Land</span> <span class="n">Surface</span> <span class="n">Temperature</span> <span class="p">(</span><span class="n">LST</span><span class="p">)</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">"https://suzaku.eorc.jaxa.jp/GCOM/index.html"</span><span class="o">&gt;</span><span class="n">Reference</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
- <span class="n">OpenLandMap</span> <span class="n">Soil</span> <span class="n">textures</span><span class="p">,</span> <span class="n">water</span> <span class="n">holding</span> <span class="n">capacity</span> <span class="n">etc</span><span class="o">.</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">"https://www.openlandmap.org/"</span><span class="o">&gt;</span><span class="n">Reference</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
-<span class="n">Fire</span> <span class="n">detection</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">"https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/about-firms"</span><span class="o">&gt;</span><span class="n">Reference</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">blockquote</span><span class="o">&gt;</span>
-</pre></div>
-</div>
+<li><p>In addition to satellite imagery and derived data, multiple environmental datasets are available on the GEE platform for ingestion into analytical processes. Commonly used enviornmental data include</p>
+<blockquote>
+  TerraClimate: Monthly Climate and Climatic Water Balance (includes precipitation, temperature, drought severity etc.) <a href="https://www.nature.com/articles/sdata2017191">Refernce</a><br>
+  SRTM Digital Elevation Data <a href="https://srtm.csi.cgiar.org/">Reference</a><br>
+  GCOM-C/SGLI L3 Land Surface Temperature (LST) <a href="https://suzaku.eorc.jaxa.jp/GCOM/index.html">Reference</a><br>
+  OpenLandMap Soil textures, water holding capacity etc. <a href="https://suzaku.eorc.jaxa.jp/GCOM/index.html">Reference</a><br>
+  Fire detection <a href="https://www.earthdata.nasa.gov/learn/find-data/near-real-time/firms/about-firms">Reference</a>
+</blockquote>
+
 </li>
 </ul>
 </section>
@@ -303,14 +295,17 @@
 <li><p>Please complete and submit <a class="reference external" href="https://github.com/SERVIR-WA/GALUP/blob/master/training/2_rs/Exercises/M3_exercise1.md">Exercise 1</a> for Module 3.</p></li>
 <li><p>Submit the Post-Module <a class="reference external" href="https://ufl.qualtrics.com/jfe/form/SV_bpjF7THHLlhtWCO">survey</a>.</p></li>
 </ol>
-<p>&lt;/p&gt;</p>
 </section>
-</section>
-<section id="id11">
-<h1>#<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h1>
-<p><strong>Previous Section:</strong>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp; <strong>Next Section:</strong></p>
-<p><span class="raw-html-m2r"><a href="module2.md" title="Module 2">Module 2</a></span> &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; <span class="raw-html-m2r"><a href="module4.md" title="Module 4">Module 4</a></span></p>
-</section>
+</section><div class="row1">
+  <div class="column1">
+    <strong>Previous Section:</strong><br>
+    <a href="/html/Training2Module2.html">Module 2</a>
+  </div>
+  <div class="column1">
+    <strong>Next Section:</strong><br>
+    <a href="/html/Training2Module4.html">Module 4</a>
+  </div>
+</div>
 
         </article>
       </div>

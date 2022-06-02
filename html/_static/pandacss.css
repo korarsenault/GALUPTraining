@@ -384,7 +384,7 @@ h6 {
 
 .h1,
 h1 {
-  font-size: 2.5rem
+  font-size: 18px
 }
 
 .h2,
@@ -5013,6 +5013,11 @@ input[type=submit].btn-block {
 
 .card-deck .card {
   margin-bottom: 15px
+}
+
+.card-footer-docutils {
+  margin: auto;
+  
 }
 
 @media (min-width:540px) {
@@ -10866,16 +10871,17 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 2.75rem 0 1.05rem;
-  font-family: var(--pst-font-family-heading);
-  font-weight: 400;
-  line-height: 1.15
+  border-radius: .5rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: .5rem -.5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: var(--pst-font-size-h1);
-  color: rgba(var(--pst-color-h1), 1)
+    font-size: 2.5em;
+    margin-bottom: 1rem;
 }
 
 h2 {
