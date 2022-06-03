@@ -2436,4 +2436,12 @@ ul.search li {
     clear: both;
   }
 
+.table {
+    border: #000;
+    border-style: dotted;
+}
+
+.tabletitle1 {
+    text-align: center;
+}
 /*# sourceMappingURL=furo.css.map*/

@@ -7,7 +7,7 @@ Workshop 3: Integrated Decision Units for Land Use Suitability Modeling
 
 ..
 
-   **Instructor**\ : `Dr. Changjie Chen <https://github.com/chjch>`_ (\ :raw-html-m2r:`<ins>chj.chen@<i></i>ufl.edu</ins>`\ ).&nbsp;&nbsp;&nbsp;&nbsp;\ **Date**\ : April 11 - April 15, 2022
+   **Instructor**\ : `Dr. Changjie Chen <https://github.com/chjch>`_ (\ :raw-html-m2r:`<ins>chj.chen@<i></i>ufl.edu</ins>`\ ).\ **Date**\ : April 11 - April 15, 2022
 
 
 Goal and Objectives
@@ -52,8 +52,8 @@ and Stage 6, as well as a part of the Stage 7.
    :header-rows: 1
 
    * - 
-     .. image:: ./img/LandEvaluationModelFAO.jpg
-        :target: ./img/LandEvaluationModelFAO.jpg
+     .. image:: ./GithubPagesImages/LandEvaluationModelFAO.jpg
+        :target: ./GithubPagesImages/LandEvaluationModelFAO.jpg
         :alt: FAO land evaluation framework
      
    * - Fig 1. The process of land-use planning. *Source*\ : FAO. (1990).
