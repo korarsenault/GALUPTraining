@@ -317,16 +317,6 @@ img.align-default, figure.align-default, .figure.align-default {
     text-align: right;
 }
 
-.card-text {
-    text-align: center;
-
-}
-
-#c2p {
-    text-align: center;
-    color: blue;
-}
-
 /* -- sidebars -------------------------------------------------------------- */
 
 div.sidebar,
@@ -914,15 +904,3 @@ div.math:hover a.headerlink {
         display: none;
     }
 }
-
-.colum1n {
-    float: left;
-    width: 50%;
-  }
-  
-  /* Clear floats after the columns */
-  .row1:after {
-    content: "";
-    display: table;
-    clear: both;
-  }

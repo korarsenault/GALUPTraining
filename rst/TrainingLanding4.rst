@@ -14,6 +14,7 @@ technologies to inform and ensure sustainable land use practices.
     :container: container-lg pb-3
     :column: col-lg-4 col-md-4 col-sm-6 col-xs-12 p-2
     :img-top-cls: pl-5 pr-5
+    :card: shadow
 
     ---
     :img-top: C:/Users/korey/GithubPages/GithubPagesImages/map-outline.svg
