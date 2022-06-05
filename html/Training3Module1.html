@@ -325,6 +325,50 @@ datasets.</p>
 find out more information about each tool by following the attached link.
 Later, we will take a more in depth look at 6 functions that are key to this
 workflow.</p>
+
+<div class="table-wrapper"><table class="docutils align-default">
+  <colgroup>
+  <col style="width: 25%"/>
+  <col style="width: 25%"/>
+  <col style="width: 25%"/>
+  <col style="width: 25%"/>
+  </colgroup>
+  <thead>
+  <tr class="row-odd"><th class="head"><p>Raster Analysis	</p></th>
+  <th class="head"><p>Vector Analysis	</p></th>
+  <th class="head"><p>Conversion</p></th>
+  <th class="head"><p>Selection</p></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="row-even"><td><p><a href="https://docs.qgis.org/3.16/en/docs/user_manual/processing_algs/qgis/rasteranalysis.html#qgisrastercalculator">Raster calculator</a></p></td>
+  <td><p><a href="https://docs.qgis.org/3.16/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#qgiseliminateselectedpolygons">Eliminate selected polygons</a></p></td>
+  <td><p><a href="https://docs.qgis.org/3.16/en/docs/user_manual/processing_algs/gdal/vectorconversion.html#gdalrasterize">Rasterize</a></p></td>
+  <td><p><a href="https://docs.qgis.org/3.16/en/docs/user_manual/processing_algs/qgis/vectorselection.html#qgisextractbyattribute">Extract by attribute</a></p></td>
+  </tr>
+  <tr class="row-odd"><td><p><a href="https://docs.qgis.org/3.16/en/docs/user_manual/processing_algs/qgis/rasteranalysis.html#qgisreclassifybytable">Reclassify by table</a></p></td>
+  <td><p><a href="https://grass.osgeo.org/grass80/manuals/v.clean.html">v.clean</a></p></td>
+  <td><p><a href="https://grass.osgeo.org/grass80/manuals/r.to.vect.html">r.to.vect</a></p></td>
+  <td><p><a href="https://docs.qgis.org/3.16/en/docs/user_manual/processing_algs/qgis/vectorselection.html#qgisselectbyexpression">Select by expression</a></p></td>
+  </tr>
+  <tr class="row-even"><td><p><a href="https://docs.qgis.org/3.16/en/docs/user_manual/processing_algs/gdal/rasteranalysis.html#gdalproximity">Proximity</a></p></td>
+  <td><p><a href="https://docs.qgis.org/3.16/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html#qgismergevectorlayers">Merge vector layers</a></p></td>
+  <td><p><a href="https://docs.qgis.org/3.16/en/docs/user_manual/processing_algs/qgis/vectorcreation.html#qgispixelstopoints">Raster pixels to points</a></p></td>
+  <td><p>&nbsp;</p></td>
+  </tr>
+  <tr class="row-odd"><td><p><a href="https://grass.osgeo.org/grass80/manuals/r.null.html">r.null</a></p></td>
+  <td><p><a href="https://docs.qgis.org/3.16/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#qgissubdivide">Subdivide</a></p></td>
+  <td><p><a href="https://docs.qgis.org/3.16/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#qgismultiparttosingleparts">Multipart to singleparts</a></p></td>
+  <td><p>&nbsp;</p></td>
+  </tr>
+  <tr class="row-even"><td><p>&nbsp;</p></td>
+  <td><p><a href="https://docs.qgis.org/3.16/en/docs/user_manual/processing_algs/qgis/vectoranalysis.html#qgisdbscanclustering">DBSCAN clustering</a></p></td>
+  <td><p><a href="https://docs.qgis.org/3.16/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#qgisfixgeometries">Fix geometries</a></p></td>
+  <td><p>&nbsp;</p></td>
+  </tr>
+  </tbody>
+  </table></div>
+
 <section id="id2">
 <h3>3.1 DBSCAN clustering<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
 <p>For <strong>Defined distance (DBSCAN)</strong>, if the <strong>Minimum Features per Cluster</strong> can
@@ -339,6 +383,18 @@ the minimum number of features within the search distance and is not a within
 the search distance of another core-point (in other words, it is neither a
 core-point nor a border-point), it is marked as a noise point and not included
 in any cluster.</p>
+
+<div class="table-wrapper"><table class="docutils align-default">
+  <tbody>
+    <tr class="row-odd">
+      <td><img src="/GithubPagesImages/DBSCANex.png"></td>
+    </tr>
+    <tr>
+      <td><p>Fig. 2 How DBSCAN is calculated. <i>Source</i>: <a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/how-density-based-clustering-works.htm">ESRI.</a></p></td>
+    </tr>
+  </tbody>
+</table>
+
 <ul class="simple">
 <li><p><strong>Usage</strong>: This tool is used to detect areas where points are concentrated
 and where they are separated by areas that are empty or sparse. Points that
@@ -375,10 +431,30 @@ clusters of gas stations within Ghana. The datasets used are listed below:</p></
 </table></div>
 <p>The two figures below display the parameter settings and the output of the
 tool.</p>
+
+<div class="table-wrapper"><table class="docutils align-default">
+  <colgroup>
+  <col style="width: 50%"/>
+  <col style="width: 25%"/>
+  <col style="width: 25%"/>
+  </colgroup>
+  <thead>
+  <tr class="row-odd"><th class="head"><p>Parameter Settings	</p></th>
+  <th class="head"><p>Input</p></th>
+  <th class="head"><p>Output</p></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="row-even"><td><p><img src="/GithubPagesImages/DBSCANpmtrs.jpg"></p></td>
+  <td><p><img src="/GithubPagesImages/GhanaGS.png"></p></td>
+  <td><p><img src="/GithubPagesImages/GhanaGS_clus.png"></p></td>
+  </tr>
+  </tbody>
+  </table></div>
 </section>
 <section id="id3">
 <h3>3.2 Proximity<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
-<p>The <strong>Proximity</strong> tool calculates the <span class="raw-html-m2r"><u>**Euclidean distance**</u></span> from the
+<p>The <strong>Proximity</strong> tool calculates the <span class="raw-html-m2r"><b>Euclidean distance</b></span> from the
 center of the source cell to the center of each of the surrounding cells.
 Conceptually, the Euclidean algorithm works as follows: for each cell, the
 distance to each source cell is determined by calculating the hypotenuse with
@@ -387,6 +463,12 @@ the true Euclidean distance, rather than the cell distance. The shortest
 distance to a source is determined, and if it is less than the specified
 maximum distance, the value is assigned to the cell location on the output
 raster.</p>
+
+<div class="table-wrapper"><table class="docutils align-default">
+  <tr><td><img src="/GithubPagesImages/EucDistEx2.gif"></td></tr>
+  <tr><td>Determining true Euclidean distance. <i>Source</i>: <a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/understanding-euclidean-distance-analysis.htm">ESRI</a></td></tr>
+</table>
+</div>
 <ul class="simple">
 <li><p><strong>Usage</strong>:
 This tool gives the measured Euclidean distance from every cell to the
@@ -395,11 +477,8 @@ raster, such as feet or meters, and are measured from cell center to cell
 center.</p></li>
 </ul>
 <blockquote>
-<div><dl class="field-list simple">
-<p>&#128204; The projected units of a raster layer can be found under the</p>
-</dd>
-</dl>
-<p><em>information</em> tab in the layer properties</p>
+<div>
+<p>&#128204; The projected units of a raster layer can be found under the <em>information</em> tab in the layer properties</p>
 </div></blockquote>
 <ul class="simple">
 <li><p><strong>Example</strong>:
@@ -430,6 +509,25 @@ distance from a gas station cluster to the rest of the raster cells.</p></li>
 </table></div>
 <p>The two figures below illustrate the parameters and output of the <strong>Proximity</strong>
 tool.</p>
+
+<div class="table-wrapper"><table class="docutils align-default">
+  <colgroup>
+  <col style="width: 50%"/>
+  <col style="width: 50%"/>
+  </colgroup>
+  <thead>
+  <tr class="row-odd"><th class="head"><p>Parameter Settings	</p></th>
+  <th class="head"><p>Output</p></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="row-even"><td><p><img src="/GithubPagesImages/ProximityPmtrs.jpg"></p></td>
+  <td><p><img src="/GithubPagesImages/ProximityRasEx.jpg"></p></td>
+  </tr>
+  </tbody>
+  </table></div>
+
+
 </section>
 <section id="id5">
 <h3>3.3 Raster Calculator<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
@@ -440,6 +538,18 @@ model in order to assign weights to each cluster.
 Distance decay, also known as the <strong>Gravity Model</strong> or the Inverse Square Law,
 is the tendency of a spatial relationship between one place and another to
 weaken as the distance between them increases<span class="raw-html-m2r"><a href="#geospatial anlysis"><sup>3</sup></a></span>.</p>
+
+<div class="table-wrapper"><table class="docutils align-default">
+  <tbody>
+    <tr class="row-odd">
+      <td><img src="/GithubPagesImages/distance_decay.png"></td>
+    </tr>
+    <tr>
+      <td><p>Fig. 2 How DBSCAN is calculated. <i>Source</i>: <a href="https://pro.arcgis.com/en/pro-app/2.7/help/analysis/geostatistical-analyst/how-inverse-distance-weighted-interpolation-works.htm">ESRI.</a></p></td>
+    </tr>
+  </tbody>
+</table>
+
 <ul>
 <li><p><strong>Usage</strong>:
 The <strong>Raster calculator</strong> tool is used to individually weight and multiply
@@ -541,21 +651,13 @@ This tool is used to reclassify raster values.</p></li>
 <p>The figures below show the parameters and output for the
 <strong>Reclassify by table</strong> tool.</p>
 <blockquote>
-<div><dl class="field-list simple">
-<dt class="field-odd">pushpin</dt>
-<dd class="field-odd"><p>Check the details of an image:<span class="raw-html-m2r"><br/></span></p>
-</dd>
-</dl>
-<p>If you can’t see the image clearly, click on the image to view it in a
+<p>&#128204; Check the details of an image:<span class="raw-html-m2r"><br>
+If you can’t see the image clearly, click on the image to view it in a
 new page, which will show the image in its original size.</p>
-</div></blockquote>
+</blockquote>
 <blockquote>
 <div><dl class="field-list simple">
-<dt class="field-odd">pushpin</dt>
-<dd class="field-odd"><p>Here is a helpful strategy:</p>
-</dd>
-</dl>
-<p>If you want to keep track of what raster cells are combined when multiplying
+<p>&#128204; Here is a helpful strategy: If you want to keep track of what raster cells are combined when multiplying
 raster layers together, try reclassifying the raster values as prime numbers.
 The product of two prime numbers can only be the result of those specific
 numbers, allowing you to identify what cells were combined.</p>
@@ -639,11 +741,7 @@ sliver polygons and other irregularities.</p></li>
 tool.</p>
 <blockquote>
 <div><dl class="field-list simple">
-<dt class="field-odd">pushpin</dt>
-<dd class="field-odd"><p>Note: This workflow utilized largest common boundary as the</p>
-</dd>
-</dl>
-<p>parameter for Eliminate selected polygons because this gave us the best
+<p>&#128204; Note: This workflow utilized largest common boundary as the parameter for Eliminate selected polygons because this gave us the best
 result. Try using the other methods for merging with the neighboring polygons
 to see which gives you the best result.</p>
 </div></blockquote>
@@ -695,11 +793,7 @@ which is area.</p></li>
 <p>The figures below show the parameters and output for the <strong>v.clean</strong> tool.</p>
 <blockquote>
 <div><dl class="field-list simple">
-<dt class="field-odd">pushpin</dt>
-<dd class="field-odd"><p>Note: In order for this tool to work, you must specify a location</p>
-</dd>
-</dl>
-<p>for the output shapefile to be saved.</p>
+<p>&#128204; Note: In order for this tool to work, you must specify a location for the output shapefile to be saved.</p>
 </div></blockquote>
 </section>
 </section>
