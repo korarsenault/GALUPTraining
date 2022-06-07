@@ -558,7 +558,7 @@ proximity rasters together.</p>
 <p>Where <em>w</em> is equal to the <strong>number of points</strong> (urban pixels) in a cluster
 divided by the total number of points in all clusters.</p>
 <p>Here is what our full equation looks like:</p>
-<a class="reference external image-reference" href="./img/TotalEq.svg"><img alt="Full Equation" src="img/TotalEq.svg"/></a>
+<a class="reference external image-reference" href="/GithubPagesImages/TotalEq.svg"><img alt="Full Equation" src="/GithubPagesImages/TotalEq.svg"/></a>
 </li>
 <li><p><strong>Example</strong>:</p></li>
 </ul>
@@ -616,6 +616,24 @@ divided by the total number of points in all clusters.</p>
 </table></div>
 <p>The figures below show the parameters and output of the <strong>Raster calculator</strong>
 tool.</p>
+
+<div class="table-wrapper"><table class="docutils align-default">
+  <colgroup>
+  <col style="width: 50%"/>
+  <col style="width: 50%"/>
+  </colgroup>
+  <thead>
+  <tr class="row-odd"><th class="head"><p>Parameter Settings	</p></th>
+  <th class="head"><p>Output</p></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="row-even"><td><p><img src="/GithubPagesImages/RastCalcPrmtrs.jpg"></p></td>
+  <td><p><img src="/GithubPagesImages/raster_calculator.png"></p></td>
+  </tr>
+  </tbody>
+  </table></div>
+
 </section>
 <section id="id7">
 <h3>3.4 Reclassify by Table<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
@@ -655,6 +673,27 @@ This tool is used to reclassify raster values.</p></li>
 If you can’t see the image clearly, click on the image to view it in a
 new page, which will show the image in its original size.</p>
 </blockquote>
+
+<div class="table-wrapper"><table class="docutils align-default">
+  <colgroup>
+  <col style="width: 33%"/>
+  <col style="width: 33%"/>
+  <col style="width: 33%"/>
+  </colgroup>
+  <thead>
+  <tr class="row-odd"><th class="head"><p>Parameter Settings</p></th>
+  <th class="head"><p>Table Parameters</p></th>
+   <th class="head"><p>Output</p></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="row-even"><td><p><img src="/GithubPagesImages/RclsfyP1.jpg"></p></td>
+  <td><p><img src="/GithubPagesImages/RclsfyP2.jpg"></p></td>
+  <td><p><img src="/GithubPagesImages/RclsfyEx.jpg"></p></td>
+  </tr>
+  </tbody>
+  </table></div>
+
 <blockquote>
 <div><dl class="field-list simple">
 <p>&#128204; Here is a helpful strategy: If you want to keep track of what raster cells are combined when multiplying
@@ -700,6 +739,27 @@ of land into IDUs.</p></li>
 </tbody>
 </table></div>
 <p>The figures below show the parameters and output for the <strong>Subdivide</strong> tool.</p>
+
+<div class="table-wrapper"><table class="docutils align-default">
+  <colgroup>
+  <col style="width: 50%"/>
+  <col style="width: 25%"/>
+  <col style="width: 25%"/>
+  </colgroup>
+  <thead>
+  <tr class="row-odd"><th class="head"><p>Parameter Settings</p></th>
+  <th class="head"><p>Input</p></th>
+   <th class="head"><p>Output</p></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="row-even"><td><p><img src="/GithubPagesImages/SubDivParameters.jpg"></p></td>
+  <td><p><img src="/GithubPagesImages/SubDivBaseEx.jpg"></p></td>
+  <td><p><img src="/GithubPagesImages/SubDivEx.jpg"></p></td>
+  </tr>
+  </tbody>
+  </table></div>
+
 </section>
 <section id="id9">
 <h3>3.6 Eliminate Selected Polygons<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
@@ -739,6 +799,27 @@ sliver polygons and other irregularities.</p></li>
 </table></div>
 <p>The figures below show the parameters for the <strong>Eliminate selected polygons</strong>
 tool.</p>
+
+<div class="table-wrapper"><table class="docutils align-default">
+  <colgroup>
+  <col style="width: 50%"/>
+  <col style="width: 25%"/>
+  <col style="width: 25%"/>
+  </colgroup>
+  <thead>
+  <tr class="row-odd"><th class="head"><p>Parameter Settings</p></th>
+  <th class="head"><p>Input</p></th>
+   <th class="head"><p>Output</p></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="row-even"><td><p><img src="/GithubPagesImages/ElimParameters.jpg"></p></td>
+  <td><p><img src="/GithubPagesImages/ElimBase.png"></p></td>
+  <td><p><img src="/GithubPagesImages/ElimOut.jpg"></p></td>
+  </tr>
+  </tbody>
+  </table></div>
+
 <blockquote>
 <div><dl class="field-list simple">
 <p>&#128204; Note: This workflow utilized largest common boundary as the parameter for Eliminate selected polygons because this gave us the best
@@ -749,15 +830,77 @@ to see which gives you the best result.</p>
 <section id="id10">
 <h3>3.7 v.clean<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h3>
 <p><strong>v.clean</strong> is a tool that cleans input layers using a selection of tools.
-The table below shows what tools are available:
-<a href="#id37"><span class="problematic" id="id38">|v.clean |       |         |         |         |
-|--------|</span></a>——-<a href="#id39"><span class="problematic" id="id40">|---------|</span></a>———<a href="#id41"><span class="problematic" id="id42">|---------|</span></a>
-<a href="#id11"><span class="problematic" id="id12">|</span></a>break   <a href="#id13"><span class="problematic" id="id14">|</span></a>snap   <a href="#id15"><span class="problematic" id="id16">|</span></a>rmdangle <a href="#id17"><span class="problematic" id="id18">|</span></a>chdangle <a href="#id19"><span class="problematic" id="id20">|</span></a>rmbridge |
-<a href="#id21"><span class="problematic" id="id22">|</span></a>chbridge|rmdupl <a href="#id23"><span class="problematic" id="id24">|</span></a>rmdac    <a href="#id25"><span class="problematic" id="id26">|</span></a>bpol     <a href="#id27"><span class="problematic" id="id28">|</span></a>prune    |
-<a href="#id29"><span class="problematic" id="id30">|</span></a>rmarea  <a href="#id31"><span class="problematic" id="id32">|</span></a>rmline <a href="#id33"><span class="problematic" id="id34">|</span></a>rmsa     |</p>
+The table below shows what tools are available:</p>
+
+<div class="table-wrapper"><table class="docutils align-default">
+  <colgroup>
+  <col style="width: 20%"/>
+  <col style="width: 20%"/>
+  <col style="width: 20%"/>
+  <col style="width: 20%"/>
+  <col style="width: 20%"/>
+  </colgroup>
+  <thead>
+  <tr class="row-odd"><th class="head"><p>v.clean</p></th>
+  <th class="head"><p>&nbsp;</p></th>
+  <th class="head"><p>&nbsp;</p></th>
+  <th class="head"><p>&nbsp;</p></th>
+  <th class="head"><p>&nbsp;</p></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="row-even"><td><p>break</p></td>
+  <td><p>snap</p></td>
+  <td><p>rmdangle</p></td>
+  <td><p>chdangle</p></td>
+  <td><p>rmbridge</p></td>
+  </tr>
+  <tr class="row-odd"><td><p>chbridge</p></td>
+  <td>rmdupl</td>
+  <td>rmdac</td>
+  <td>bpol</td>
+  <td>prune</td>
+  </tr>
+  <tr>
+  <tr class="row-even"><td><p>rmarea</p></td>
+  <td>rmline</td>
+  <td>rmsa</td>
+  <td><p>&nbsp;</p></td>
+  <td><p>&nbsp;</p></td>
+  </tr>
+  </tbody>
+  </table></div>
 <p>There is also an optional parameter called <em>Input feature type</em> which allows
 you to specify what you want to be cleaned. This makes the <strong>v.clean</strong> tool
 more effective. The table below shows the possible input feature types:</p>
+
+<div class="table-wrapper"><table class="docutils align-default">
+  <colgroup>
+  <col style="width: 25%"/>
+  <col style="width: 25%"/>
+  <col style="width: 25%"/>
+  <col style="width: 25%"/>
+  </colgroup>
+  <thead>
+  <tr class="row-odd"><th class="head"><p>v.clean</p></th>
+  <th class="head"><p>&nbsp;</p></th>
+  <th class="head"><p>&nbsp;</p></th>
+  <th class="head"><p>&nbsp;</p></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="row-even"><td><p>area</p></td>
+  <td><p>point</p></td>
+  <td><p>line</p></td>
+  <td><p>boundary</p></td>
+  </tr>
+  <tr class="row-odd"><td><p>centroid</p></td>
+  <td>face</td>
+  <td>kernel</td>
+  <td>&nbsp;</td>
+  </tr>
+  </tbody>
+  </table></div>
 <ul class="simple">
 <li><p><strong>Usage</strong>:
 The <strong>v.clean</strong> tool is used for making each of the IDUs more regularly
@@ -791,11 +934,29 @@ which is area.</p></li>
 </tbody>
 </table></div>
 <p>The figures below show the parameters and output for the <strong>v.clean</strong> tool.</p>
+
+<div class="table-wrapper"><table class="docutils align-default">
+  <colgroup>
+  <col style="width: 50%"/>
+  <col style="width: 25%"/>
+  <col style="width: 25%"/>
+  </colgroup>
+  <thead>
+  <tr class="row-odd"><th class="head"><p>Parameter Settings</p></th>
+  <th class="head"><p>Input</p></th>
+   <th class="head"><p>Output</p></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="row-even"><td><p><img src="/GithubPagesImages/CleanParameters.jpg"></p></td>
+  <td><p><img src="/GithubPagesImages/CleanBase.jpg"></p></td>
+  <td><p><img src="/GithubPagesImages/CleanOut.jpg"></p></td>
+  </tr>
+  </tbody>
+  </table></div>
+
 <blockquote>
-<div><dl class="field-list simple">
 <p>&#128204; Note: In order for this tool to work, you must specify a location for the output shapefile to be saved.</p>
-</div></blockquote>
-</section>
 </section>
 <section id="the-qgis-workflow-of-creating-idus">
 <h2>4. The QGIS Workflow of Creating IDUs<a class="headerlink" href="#the-qgis-workflow-of-creating-idus" title="Permalink to this headline">#</a></h2>
@@ -812,48 +973,65 @@ distance raster, and define urban boundary.</p>
 must first be extracted from the base land use raster.
 This was done by converting the land use raster to vector points and then
 extracting points according to their land use designation.
-Points designated with land use type <span class="raw-html-m2r"><u>**6**</u></span> make up the urban areas
-that we are looking for.
-Once these have been extracted, they are entered into the DBSCAN clustering
-tool.
-<span class="raw-html-m2r"><u>The output from the DBSCAN tool is our urban clusters.</u></span></p></li>
+Points designated with land use type <b>6</b> make up the urban areas
+that we are looking for. Once these have been extracted, they are entered into the DBSCAN clustering
+tool.The output from the DBSCAN tool is our urban clusters.</span></p></li>
 <li><p>Now that DBSCAN has identified urban clusters, each of these clusters must
 individually be <strong>extracted</strong>, <strong>converted to raster</strong>, and then <strong>processed
 using the proximity tool</strong>.</p></li>
 <li><p>After completing the previous steps, we can move on to <strong>calculating the area
 of influence</strong> for each cluster. This influence is calculated by dividing the
 number of points in a cluster by the total number of points for all clusters.
-These are now weighted using the <em>inverse distance formula</em>, where
-<span class="raw-html-m2r"><u>**1**</u></span> is divided by the proximity raster and multiplied by the weight.</p></li>
+These are now weighted using the <em>inverse distance formula</em>, where <b>1</b> is divided by the proximity raster and multiplied by the weight.</p></li>
 <li><p>To define the boundary between the urban and rural areas of the THLD
 District, we can <strong>reclassify our weighted raster</strong>. This reclassified raster
-will be binary, where <span class="raw-html-m2r"><u>**1**</u></span> corresponds to the urban area and
-<span class="raw-html-m2r"><u>**0**</u></span> corresponds to the rural area.</p></li>
+will be binary, where <b>1</b> corresponds to the urban area and <b>0</b> corresponds to the rural area.</p></li>
 </ul>
+<div class="table-wrapper"><table class="docutils align-default">
+  <th>Developing urban clusters</th>
+  <tbody>
+    <tr>
+      <td><img src="/GithubPagesImages/IDU_diagram_1.svg"></td>
+    </tr>
+  </tbody>
+</table>
+
 <details>
 <summary><b>IDU part 1 video demo (click to watch)</b></summary>
 <a href="https://mediasite.video.ufl.edu/Mediasite/Play/97be5d97e2dc4150933b76f8624b43001d">
-<img alt="IDU part 1" src="./img/IDU_part1_video_thumbnail.png" width="800"/>
+<img alt="IDU part 1" src="/GithubPagesImages/IDU_part1_video_thumbnail.png" width="800"/>
 </a>
 <br/>
 
-&gt; :bulb: A quick note on the **Reclassification table**<br/>
-&gt; The output raster generated by multiplying proximity rasters and their
-&gt; respective weights is monotonically increasing.
-&gt; In other words, there are no 0 values at the center of an urban cluster.
-&gt; Therefore, the "Reclassification table" shown at about "07:30" of the video
-&gt; demo can be simplified with only two classes as:
-&gt; | Minimum | Maximum | Value |
-&gt; |---------|---------|-------|
-&gt; | 0       | 0.0039  | 0     |
-&gt; | 0.0039  | 1       | 1     |
-
+<blockquote>
+  <p>&#128161; A quick note on the Reclassification table</p>
+  <p>The output raster generated by multiplying proximity rasters and their respective weights is monotonically increasing. In other words, there are no 0 values at the center of an urban cluster. Therefore, the "Reclassification table" shown at about "07:30" of the video demo can be simplified with only two classes as:</p>
+  <table class="docutils align-default">
+    <thead class="row-odd">
+      <th>Minimum</th>
+      <th>Maximum</th>
+      <th>Value</th>
+    </thead>
+    <tbody>
+    <tr class="row-even">
+      <td>0</td>
+      <td>0.0039</td>
+      <td>0</td>
+    </tr>
+    <tr class="row-odd">
+      <td>0.0039</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+  </table>
+</blockquote>
 </details><details>
 <summary>
 <b>IDU in-depth explanation: Calculating Urban Clusters (click to watch)</b>
 </summary>
 <a href="https://mediasite.video.ufl.edu/Mediasite/Play/88c8a6c697bb4ef98fc1fce0d807b6fb1d">
-<img alt="IDU in-depth 1" src="./img/IDU_indepth1_video_thumbnail.png" width="800"/>
+<img alt="IDU in-depth 1" src="/GithubPagesImages/IDU_indepth1_video_thumbnail.png" width="800"/>
 </a>
 </details></section>
 <section id="calculating-idus">
@@ -866,13 +1044,13 @@ overlay input rasters, separate rural and urban areas, process vector data
 <li><p>The first step in calculating the IDUs is to <strong>create the base suitability
 raster</strong>.
 In order to make the calculations easier, we are going to <strong>reclassify</strong> the
-land cover raster into <span class="raw-html-m2r"><u>three general categories</u></span>.
+land cover raster into three general categories
 Once this is done, the generalized land cover and drainage rasters are ready
 to be combined.
 In order to combine these rasters, they must first be <strong>reclassified as
 prime numbers</strong>.
-The reason we do this is to keep track of what <span class="raw-html-m2r"><u>raster values are combined
-when we multiply the land cover and drainage rasters together</u></span>
+The reason we do this is to keep track of what raster values are combined
+when we multiply the land cover and drainage rasters together</span>
 (for further explanation on why we use prime numbers, you can refer back to
 section 3.3 Raster Calculator).
 After the layers are reclassified, they are <strong>multiplied together</strong> using
@@ -880,23 +1058,23 @@ raster calculator.</p></li>
 <li><p>Next, the combined suitability raster needs to be <strong>separated into urban
 and rural areas</strong>. This is where we use the urban and rural rasters that were
 calculated in the first part of the IDU workflow. The combined raster is
-<strong>multiplied</strong> by the urban and rural rasters, respectively. <span class="raw-html-m2r"><u>This
+<strong>multiplied</strong> by the urban and rural rasters, respectively. This
 calculation maintains the suitability of the targeted area while setting the
-rest of the raster equal to **0**</u></span>. After this is done for both the urban
+rest of the raster equal to <b>0</b>. After this is done for both the urban
 and rural rasters,
-the <strong>r.null</strong> tool is used to convert the <span class="raw-html-m2r"><u>**0**</u></span> raster values to
-<span class="raw-html-m2r"><u>**No Data**.</u></span></p></li>
+the <strong>r.null</strong> tool is used to convert the 0 raster values to
+<b>No Data</b>.</p></li>
 <li><p>With the urban and rural parts of the suitability raster separated, it is
 time to create the first iteration of the IDUs. Starting with either the
 urban or rural suitability rasters, r.to.vect is used to <strong>convert the raster
 layer</strong> to a vector layer. The fix geometries tool is then used on the vector
-layer, <strong>creating a valid input</strong> for the subdivide tool. <span class="raw-html-m2r"><u>The subdivide
+layer, <strong>creating a valid input</strong> for the subdivide tool.The subdivide
 tool
 returns a multipart polygon which must be converted to a single part polygon
-before further processing.</u></span> At this point, the subdivided areas are very
+before further processing. At this point, the subdivided areas are very
 small and irregular. This is addressed by <strong>eliminating very small polygons</strong>
-and merging them with other nearby, larger polygons. <span class="raw-html-m2r"><u>Multiple iterations
-are required in order to create regular, consistent IDUs.</u></span></p></li>
+and merging them with other nearby, larger polygons. Multiple iterations
+are required in order to create regular, consistent IDUs.</p></li>
 <li><p>Once the IDUs have been established, all that is left to do is some <strong>final
 cleaning</strong> (if you choose) and to <strong>merge</strong> the urban and rural layers back
 together.
@@ -905,6 +1083,16 @@ is very subtle and is not required if you feel that your IDUs are regular
 enough already. The urban IDUs and rural IDUs can then be <strong>merged</strong> to
 create the final IDU layer.</p></li>
 </ul>
+
+<div class="table-wrapper"><table class="docutils align-default">
+  <th>Calculating IDUs</th>
+  <tbody>
+    <tr>
+      <td><img src="/GithubPagesImages/IDU_diagram_2.svg"></td>
+    </tr>
+  </tbody>
+</table>
+
 <blockquote>
 <div><p>The GIS process described above leads us to the final IDUs of THLD district.
 It is worth noting that the output may not be identical or 100% reproducible
@@ -918,43 +1106,46 @@ and visualize it in QGIS.</p>
 <details>
 <summary><b>IDU part 2 video demo (click to watch)</b></summary>
 <a href="https://mediasite.video.ufl.edu/Mediasite/Play/1ccee73008e44189b0f3dfa13c4595ca1d">
-<img alt="IDU part 2" src="./img/IDU_part2_video_thumbnail.png" width="800"/>
+<img alt="IDU part 2" src="/GithubPagesImages/IDU_part2_video_thumbnail.png" width="800"/>
 </a>
-</details><details>
+</details>
+<br>
+<details>
 <summary>
 <b>IDU in-depth explanation: Weight clusters and create urban/rural masks (click to watch)</b>
 </summary>
 <a href="https://mediasite.video.ufl.edu/Mediasite/Play/ccb43a6c0220405c97d282e2fa208a541d">
-<img alt="IDU in-depth 2" src="./img/IDU_indepth2_video_thumbnail.png" width="800"/>
+<img alt="IDU in-depth 2" src="/GithubPagesImages/IDU_indepth2_video_thumbnail.png" width="800"/>
 </a>
-</details><details>
+</details>
+<br>
+<details>
 <summary><b>IDU part 3 video demo (click to watch)</b></summary>
 <a href="https://mediasite.video.ufl.edu/Mediasite/Play/5e17bcddb40a4d73a79ed274f284b3491d">
-<img alt="IDU part 3" src="./img/IDU_part3_video_thumbnail.png" width="800"/>
+<img alt="IDU part 3" src="/GithubPagesImages/IDU_part3_video_thumbnail.png" width="800"/>
 </a>
-</details><details>
+</details><br>
+<details>
 <summary>
 <b>IDU in-depth explanation: Iterative elimination and v.clean tool (click to watch)</b>
 </summary>
 <a href="https://mediasite.video.ufl.edu/Mediasite/Play/ab236f79f55b443eaf68b7e224454e7e1d">
-<img alt="IDU in-depth 3" src="./img/IDU_indepth3_video_thumbnail.png" width="800"/>
+<img alt="IDU in-depth 3" src="/GithubPagesImages/IDU_indepth3_video_thumbnail.png" width="800"/>
 </a>
 <br/>
-
-&gt; :bulb: A quick note on the **parameters** used in the demo<br/>
-&gt; It is important to understand that the parameters used in this demo is based
-&gt; on the fact that the raster **cell size** is 100 meters.
-&gt; For example, in the _Select by expression_ tool, 10000 (approx.) is used to
-&gt; select polygons that will be eliminated because that is the area of a single
-&gt; cell in the original raster is 10,000 square meters (i.e., 100 x 100).
-&gt; One must adjust the parameter when a different cell size is in question.
-&gt; A parameter of _10,000_ is certainly not at the right magnitude for a raster
-&gt; with cell size of 10 meters.
-
-</details><details>
+<blockquote>&#128161; A quick note on the <b>parameters</b> used in the demo<br>
+It is important to understand that the parameters used in this demo is based on the fact that the raster <b>cell size</b> is 100 meters.
+For example, in the <i>Select by expression</i> tool, 10000 (approx.) is used to
+select polygons that will be eliminated because that is the area of a single
+cell in the original raster is 10,000 square meters (i.e., 100 x 100).
+ One must adjust the parameter when a different cell size is in question.  A parameter of <i>10,000</i> is certainly not at the right magnitude for a raster
+ with cell size of 10 meters.
+</blockquote>
+</details><br>
+<details>
 <summary><b>THLD final IDU map</b></summary>
 
-![Final IDU](./img/FinalIDUmerge.jpg)
+<img alt="Final IDU map" src="/GithubPagesImages/FinalIDUmerge.jpg">
 
 </details></section>
 </section>
