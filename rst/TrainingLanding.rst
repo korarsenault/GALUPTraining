@@ -11,55 +11,67 @@ technologies to inform and ensure sustainable land use practices.
 
 
 .. panels::
-    :container: container-lg pb-3
-    :column: col-lg-4 col-md-4 col-sm-6 col-xs-12 p-2
     :img-top-cls: pl-5 pr-5
+    :body: text-center
+    :footer: text-center
 
     ---
-    :img-top: C:/Users/korey/GithubPages/GithubPagesImages/map-outline.svg
+    :img-top: /GithubPagesImages/map-outline.svg
 
-    Workshop 1
     ^^^^^^^^
 
-    Land-Use Suitability Analysis with QGIS Tools
-
+    Workshop 1: Land-Use Suitability Analysis with QGIS Tools
+   
     ++++++
 
-    .. link-button:: C:/Users/korey/GithubPages/html/Training1ReadMe.html
+    .. link-button:: /html/Training1ReadMe.html
     :type: url
     :text: Learn More
+    :classes: btn-outline-primary btn-block stretched-link
 
     ---
    
-    :img-top: C:/Users/korey/GithubPages/GithubPagesImages/earth-outline.svg"
+    :img-top: /GithubPagesImages/earth-outline.svg"
     
-    Workshop 2
     ^^^^^^^^
 
-    Introduction to Satellite Remote Sensing
-
+    Workshop 2: Introduction to Satellite Remote Sensing
+   
     ++++++
     
-    .. link-button:: C:/Users/korey/GithubPages/html/Training2ReadMe.html
+    .. link-button:: /html/Training2ReadMe.html
     :type: url
     :text: Learn More
+    :classes: btn-outline-primary btn-block stretched-link
 
     ---
    
-    :img-top: C:/Users/korey/GithubPages/GithubPagesImages/desktop-outline.svg"
+    :img-top: /GithubPagesImages/desktop-outline.svg"
     
-    
-    Workshop 3
     ^^^^^^^^
 
-    Integrated Decision Units for Land Use Suitability Modeling
+    Workshop 3: Integrated Decision Units for Land Use Suitability Modeling
 
     ++++++
 
     
-    .. link-button:: C:/Users/korey/GithubPages/html/html/Training3ReadMe.html
+    .. link-button:: /html/html/Training3ReadMe.html
     :type: url
     :text: Learn More
-    
+    :classes: btn-outline-primary btn-block stretched-link
+
     ---
   
+    :img-top: C:/Users/korey/GithubPages/GithubPagesImages/desktop-outline.svg"
+    
+    ^^^^^^^^
+
+    Workshop 4
+
+    ++++++
+
+    .. link-button:: /html/html/Training3ReadMe.html
+    :type: url
+    :text: Learn More
+    :classes: btn-outline-primary btn-block stretched-link
+    
