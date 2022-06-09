@@ -285,14 +285,6 @@
     padding-left: 3rem !important
 }
 
-.icon-l {
-    padding-left: 7rem !important
-}
-
-.icon-r {
-    padding-right: 7rem !important
-}
-
 .m-0 {
     margin: 0 !important
 }
@@ -1366,7 +1358,7 @@ input.btn-block[type=submit] {
 }
 
 .shadow {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important
+    box-shadow: 0 5em 1rem rgba(0, 0, 0, 0.15) !important
 }
 
 .bg-primary {

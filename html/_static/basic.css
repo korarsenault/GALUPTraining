@@ -887,10 +887,6 @@ div.math:hover a.headerlink {
     visibility: visible;
 }
 
-a.no-under {
-    text-decoration: none;
-    }
-
 /* -- printout stylesheet --------------------------------------------------- */
 
 @media print {
@@ -908,4 +904,3 @@ a.no-under {
         display: none;
     }
 }
-
