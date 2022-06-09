@@ -1,7 +1,8 @@
+/* got rid of underlines on */
 a.no-under {
     text-decoration: none;
 }
-
+/* centered images on card panel */
 .icon-l {
     padding-left: 7rem !important
 }
@@ -9,7 +10,13 @@ a.no-under {
 .icon-r {
     padding-right: 7rem !important
 }
-
+/* enhanced shadow on card */
 div.strong-shadow {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)
 }
+/* made text smaller and increased line height, copied from Pandas documentatioin */
+
+p {
+    margin-bottom: 1.15rem;
+    font-size: 1em;
+    line-height: 1.5;}

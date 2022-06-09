@@ -450,7 +450,7 @@ body {
 article {
     line-height: 1.5
 }
-
+/* reduced font weight of headings */
 h1,
 h2,
 h3,
@@ -473,7 +473,7 @@ h5+p,
 h6+p {
     margin-top: 0
 }
-
+/* edited each of these to be smaller */
 h1 {
     font-size: 2.0em;
     margin-bottom: 1rem
