@@ -21,44 +21,49 @@ p {
     font-size: 1em;
     line-height: 1.5;}
 
-nav {
+nav.navbar-main {
     background-color: white;
-    /* position: fixed; */
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
+    height: 60px;
+    vertical-align: middle;
     display: flex;
     align-items: center;
-    /* display: inline; */
 }
 
-.navbar-brand-logo {
-    height: 80px;
-    float: left;
-    margin-left: 40px;
+img.navbar-brand-logo {
+    height: 60px;
+    margin-left: 80px;
+    display: block;
 }
 
-.center{
-    margin: auto;
-    width: 50%;
-    padding: 10px
-}
-
-.logo-title {
+a.logo-title {
     color: black;
     text-decoration: none;
-    font-size: 24px;
-    /* margin: auto;
-    width: 50%;
-    padding: 10px; */
+    font-size: 20px;
+    /* margin-left: auto; */
+    /* vertical-align: middle; */
+    align-items: center;
+    display: flex;
+    position: relative;
 }
 
 nav * {
     display: inline
 }
 
-nav
+div.navbar-center-item {
+    position: relative;
+    left: 80px;
+}
 
+li.nav-item {
+    margin: 10px;
+}
 
-
+a.nav-link {
+    text-decoration: none;
+    color: black;
+}
