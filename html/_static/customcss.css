@@ -16,25 +16,33 @@ div.strong-shadow {
 }
 /* made text smaller and increased line height, copied from Pandas documentatioin */
 
+body { padding-top: 70px; } 
+
 p {
     margin-bottom: 1.15rem;
     font-size: 1em;
     line-height: 1.5;}
 
-nav {
+nav.navbar-main {
     background-color: white;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    margin-right: auto;    
+    margin-left: auto;    
     width: 100%;
+    /* max-width: 100%;    
+    min-width: 1000px */
     height: 70px;
-    z-index: 100;
+    z-index: 1000;
     vertical-align: middle;
     display: flex;
     align-items: center;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
+
+
 
 img.navbar-brand-logo {
     height: 60px;
@@ -76,4 +84,8 @@ div.navbar-end-item {
 
 nav * {
     display: inline
+}
+
+.card * {
+    background-color: ;
 }

@@ -4953,7 +4953,7 @@ input[type=submit].btn-block {
 .card-header {
   padding: .75rem 1.25rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, .03);
+  background-color: white;
   border-bottom: 1px solid rgba(0, 0, 0, .125)
 }
 
@@ -4963,8 +4963,8 @@ input[type=submit].btn-block {
 
 .card-footer {
   padding: .75rem 1.25rem;
-  background-color: rgba(0, 0, 0, .03);
-  border-top: 1px solid rgba(0, 0, 0, .125)
+  background-color:white;
+  border-top: 1px solid white
 }
 
 .card-footer:last-child {
