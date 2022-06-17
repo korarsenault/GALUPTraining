@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'GALUP'
-copyright = '2022, FIBER'
+copyright = '2022, The GALUP Team'
 author = 'FIBER'
 
 
