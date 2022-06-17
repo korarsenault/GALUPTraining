@@ -61,7 +61,7 @@ a.logo-title {
     position: relative;
 }
 
-div.navbar-center-item {
+div.navbar-center {
     position: relative;
     left: 80px;
 }
@@ -75,7 +75,7 @@ a.nav-link {
     color: black;
 }
 
-div.navbar-end-item {
+div.navbar-right-item {
     position: relative;
     left: 500px;
     display: inline;
@@ -89,3 +89,17 @@ nav * {
 .card * {
     background-color: ;
 }
+
+@media (min-width:960px) {
+    .navbar-expand-lg {
+        flex-flow: row nowrap;
+        justify-content: flex-start
+    }
+}
+
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto
+}
+
