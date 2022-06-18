@@ -13,12 +13,10 @@
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
-<!-- css from pydata -->
-    <!-- <link rel="stylesheet" type="text/css" href="_static/navbar_portion.css"/> -->
-    <!-- <link rel="stylesheet" type="text/css" href="_static/styles/pydata-sphinx-theme.css"/> -->
     <link rel="stylesheet" type="text/css" href="_static/customcss.css"/>
 <!-- font awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="_static/bootstrap.css"/> -->
 
 
 <style>
@@ -40,6 +38,15 @@
   
       }
     }
+
+    @media screen and (max-width: 1200px) {
+    nav.navbegone{
+        display: none;
+    }
+    body {
+      padding: 0;
+    }
+}
   }
 </style>
 
@@ -105,7 +112,7 @@
 <!-- navbar with custom css -->
 
 <!-- renamed classes to edit in my css -->
-<nav class="navbar-main navbar-expand-lg">
+<nav class="navbar navbegone navbar-main navbar-expand-sm">
   <div id="navbar-left">
     <a class="logo-title" href="/index.html">
     <img class="navbar-brand-logo" src="/GithubPagesImages/GALUP-logo-final-color-2020.svg"/>
@@ -444,5 +451,6 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/scripts/furo.js"></script>
+    <script src="_static/bootstrap.js"></script>
     </body>
 </html>

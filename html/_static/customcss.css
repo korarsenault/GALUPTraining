@@ -90,7 +90,7 @@ nav * {
     background-color: ;
 }
 
-@media (min-width:960px) {
+/* @media (min-width:960px) {
     .navbar-expand-lg {
         flex-flow: row nowrap;
         justify-content: flex-start
@@ -101,5 +101,11 @@ nav * {
 .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto
-}
+} */
 
+@media screen and (max-width: 1000px) {
+    .navbegone nav{
+        display: none;
+        visibility: hidden;
+    }
+}
