@@ -314,7 +314,7 @@ body {
     --color-header-background: var(--color-background-primary);
     --color-header-border: var(--color-background-border);
     --color-header-text: var(--color-foreground-primary);
-    --color-sidebar-background: var(--color-background-secondary);
+    --color-sidebar-background: white(--color-background-secondary);
     --color-sidebar-background-border: var(--color-background-border);
     --color-sidebar-brand-text: var(--color-foreground-primary);
     --color-sidebar-caption-text: var(--color-foreground-muted);
@@ -412,7 +412,8 @@ html body .only-dark {
             --color-admonition-background: #18181a;
             --color-card-border: var(--color-background-secondary);
             --color-card-background: #18181a;
-            --color-card-marginals-background: var(--color-background-hover)
+            --color-card-marginals-background: var(--color-background-hover);
+            
         }
 
         html body:not([data-theme=light]) .only-light {
@@ -617,9 +618,10 @@ article {
     display: flex;
     flex: 1
 }
+/* changed form var(--color-sidebar-background) to white,  */
 
 .sidebar-drawer {
-    background: white;
+    background: var(--color-sidebar-background);
     border-right: 1px solid var(--color-sidebar-background-border);
     box-sizing: border-box;
     display: flex;
