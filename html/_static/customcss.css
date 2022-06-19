@@ -16,7 +16,7 @@ div.strong-shadow {
 }
 /* made text smaller and increased line height, copied from Pandas documentatioin */
 
-body { padding-top: 70px; } 
+body { padding-top: 60px; } 
 
 p {
     margin-bottom: 1.15rem;
@@ -32,9 +32,8 @@ nav.navbar-main {
     margin-right: auto;    
     margin-left: auto;    
     width: 100%;
-    /* max-width: 100%;    
-    min-width: 1000px */
-    height: 70px;
+    /* same height as the py-data theme */
+    height: 60px;
     z-index: 1000;
     vertical-align: middle;
     display: flex;
@@ -45,7 +44,7 @@ nav.navbar-main {
 
 
 img.navbar-brand-logo {
-    height: 60px;
+    height: 50px;
     margin-left: 80px;
     display: block;
 }
