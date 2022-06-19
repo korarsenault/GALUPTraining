@@ -11,30 +11,42 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=68f4518137b9aefe99b631505a2064c3c42c9852" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     <link rel="stylesheet" type="text/css" href="_static/customcss.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
 
     
 
 
-<style>
-  body {
-    --color-code-background: #f8f8f8;
-  --color-code-foreground: black;
-  
-  }
-  @media not print {
-    body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
-  
-    }
-    @media (prefers-color-scheme: dark) {
-      body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
-  
+    <style>
+      body {
+        --color-code-background: #f8f8f8;
+      --color-code-foreground: black;
+      
       }
+      @media not print {
+        body[data-theme="dark"] {
+          --color-code-background: #202020;
+          --color-code-foreground: #d0d0d0;
+      
+        }
+        @media (prefers-color-scheme: dark) {
+          body:not([data-theme="light"]) {
+            --color-code-background: #202020;
+            --color-code-foreground: #d0d0d0;
+      --
+      
+          }
+        }
+    
+        @media screen and (max-width: 1200px) {
+        nav.navbegone{
+            display: none;
+        }
+        body {
+          padding: 0;
+        }
     }
-  }
+      }
 </style></head>
   <body>
     
@@ -42,6 +54,47 @@
       document.body.dataset.theme = localStorage.getItem("theme") || "auto";
     </script>
     
+    <nav class="navbar navbegone navbar-main navbar-expand-sm">
+      <div id="navbar-left">
+        <a class="logo-title" href="/html/index.html">
+        <img class="navbar-brand-logo" src="/GithubPagesImages/GALUP-logo-final-color-2020.svg"/>
+          &nbsp; GALUP Training
+        </a>
+      </div>
+      <div class="navbar-center">
+        <ul id="navbar-main-elements" class="navbar-nav">
+          <li class="nav-item">
+          <a class="nav-link" href="/html/index.html">
+            Placeholder 1
+          </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/html/index.html">
+            Placeholder 2
+            </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/index.html">
+              Placeholder 3
+              </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/index.html">
+                Placeholder 4
+                </a>
+                </li>
+        </ul>
+      </div>
+      <div id="navbar-right">
+        <div class="navbar-right-item">
+          <a class="icon-link" href="https://github.com/SERVIR-WA/GALUP">
+            <i class ="fa fa-fw fa-github"></i></a>
+          <a class="icon-link" href="https://twitter.com/galupghana">
+              <i class="fa fa-fw fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    </nav>
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="svg-toc" viewBox="0 0 24 24">

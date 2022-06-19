@@ -78,11 +78,35 @@ div.navbar-right-item {
     position: relative;
     left: 500px;
     display: inline;
-    /* display: inline; */
+    vertical-align: middle;
+    align-items: center;
+}
+
+img.icon-middle{
+    vertical-align: middle;
+    align-items: center;
+}
+
+
+a.icon-link {
+    vertical-align: middle;
+    align-items: center;
+}
+
+i.icon-img {
+    vertical-align: middle;
+    padding-bottom: 5px;
 }
 
 nav * {
     display: inline
+}
+
+@media screen and (max-width: 1000px) {
+    .navbegone nav{
+        display: none;
+        visibility: hidden;
+    }
 }
 
 /* .card * {
@@ -101,10 +125,3 @@ nav * {
     display: flex !important;
     flex-basis: auto
 } */
-
-@media screen and (max-width: 1000px) {
-    .navbegone nav{
-        display: none;
-        visibility: hidden;
-    }
-}

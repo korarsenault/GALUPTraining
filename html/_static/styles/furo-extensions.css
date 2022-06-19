@@ -206,6 +206,81 @@ body {
     --tabs--label-border--active--hover: var(--color-brand-content)
 }
 
+@media not print {
+    body[data-theme=dark] {
+        --color-problematic: #ee5151;
+        --color-foreground-primary: #ffffffcc;
+        --color-foreground-secondary: #9ca0a5;
+        --color-foreground-muted: #81868d;
+        --color-foreground-border: #666;
+        --color-background-primary: #131416;
+        --color-background-secondary: #1a1c1e;
+        --color-background-hover: #1e2124;
+        --color-background-hover--transparent: #1e212400;
+        --color-background-border: #303335;
+        --color-background-item: #444;
+        --color-announcement-background: #000000dd;
+        --color-announcement-text: #eeebee;
+        --color-brand-primary: #2b8cee;
+        --color-brand-content: #368ce2;
+        --color-highlighted-background: #083563;
+        --color-guilabel-background: #08356380;
+        --color-guilabel-border: #13395f80;
+        --color-api-keyword: var(--color-foreground-secondary);
+        --color-highlight-on-target: #330;
+        --color-admonition-background: #18181a;
+        --color-card-border: var(--color-background-secondary);
+        --color-card-background: #18181a;
+        --color-card-marginals-background: var(--color-background-hover)
+    }
+
+    html body[data-theme=dark] .only-light {
+        display: none !important
+    }
+
+    body[data-theme=dark] .only-dark {
+        display: block !important
+    }
+
+    @media(prefers-color-scheme:dark) {
+        body:not([data-theme=light]) {
+            --color-problematic: #ee5151;
+            --color-foreground-primary: #ffffffcc;
+            --color-foreground-secondary: #9ca0a5;
+            --color-foreground-muted: #81868d;
+            --color-foreground-border: #666;
+            --color-background-primary: #131416;
+            --color-background-secondary: #1a1c1e;
+            --color-background-hover: #1e2124;
+            --color-background-hover--transparent: #1e212400;
+            --color-background-border: #303335;
+            --color-background-item: #444;
+            --color-announcement-background: #000000dd;
+            --color-announcement-text: #eeebee;
+            --color-brand-primary: #2b8cee;
+            --color-brand-content: #368ce2;
+            --color-highlighted-background: #083563;
+            --color-guilabel-background: #08356380;
+            --color-guilabel-border: #13395f80;
+            --color-api-keyword: var(--color-foreground-secondary);
+            --color-highlight-on-target: #330;
+            --color-admonition-background: #18181a;
+            --color-card-border: var(--color-background-secondary);
+            --color-card-background: #18181a;
+            --color-card-marginals-background: var(--color-background-hover);
+            
+        }
+
+        html body:not([data-theme=light]) .only-light {
+            display: none !important
+        }
+
+        body:not([data-theme=light]) .only-dark {
+            display: block !important
+        }
+    }
+}
+
 [role=main] .container {
     max-width: none;
     padding-left: 0;
@@ -221,5 +296,8 @@ body {
     background-color: white;
     color: var(--color-foreground)
 }
+
+
+
 
 /*# sourceMappingURL=furo-extensions.css.map*/
