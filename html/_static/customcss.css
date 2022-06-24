@@ -17,7 +17,7 @@ div.strong-shadow {
 /* made text smaller and increased line height, copied from Pandas documentatioin */
 
 /* this can and should change with diff themes */
-body { padding-top: 70px; } 
+body { padding-top: 80px; } 
 
 .stickme {
     position: -webkit-sticky;
@@ -51,25 +51,17 @@ nav.navbar-main {
 
 
 img.navbar-brand-logo {
-    height: 50px;
-    margin-left: 80px;
-    display: block;
+    margin-left: 90px;
 }
 
 a.logo-title {
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    /* margin-left: auto; */
-    /* vertical-align: middle; */
     align-items: center;
-    display: flex;
-    position: relative;
+       /* position: relative; */
 }
 
 div.navbar-center {
     position: relative;
-    left: 80px;
+    left: 90px;
 }
 
 li.nav-item {
@@ -79,6 +71,10 @@ li.nav-item {
 a.nav-link {
     text-decoration: none;
     color: black;
+}
+
+div.right-icon {
+    padding-right: 210px;
 }
 
 div.navbar-right-item {
