@@ -1,3 +1,26 @@
+div.card {
+    --bg-color:#ffffff;
+    --text-color:#000;
+    --img-color:#000;
+}
+
+@media not print {
+    div.card[data-theme=dark] {
+        --bg-color: #131416;
+        --text-color: #ffffff;
+        --img-color: #ffffff;
+    }
+}
+
+@media(perfers-color-shcheme:dark) {
+    div.card:not([data-theme=light]) {
+        --bg-color: #131416;
+        --text-color: #ffffffcc;
+        --img-color: #ffffffcc;
+    }
+}
+
+
 .badge {
     border-radius: .25rem;
     display: inline-block;
@@ -1266,7 +1289,7 @@ input.btn-block[type=submit] {
     flex: 1 1 auto;
     min-height: 1px;
     padding: 1.25rem;
-    background-color: white;
+    background-color: var(--bg-color);
 }
 
 .card-title {
@@ -1342,6 +1365,7 @@ input.btn-block[type=submit] {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     width: 100%
+    color: var()
 }
 
 .card-img,
