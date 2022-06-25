@@ -48,6 +48,9 @@ nav.navbar-main {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
+nav.short {
+    height: 60px;
+}
 
 
 img.navbar-brand-logo {
@@ -105,11 +108,17 @@ nav * {
     display: inline
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
     .navbegone nav{
         display: none;
         visibility: hidden;
     }
+}
+
+.inline-toggle {
+    display: inline;
+    vertical-align: middle;
+    align-items: center;
 }
 
 /* .card * {

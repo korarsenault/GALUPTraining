@@ -9,5 +9,10 @@
         "plaintext",
         "html"
     ],
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#153510",
+        "titleBar.activeBackground": "#1D4A16",
+        "titleBar.activeForeground": "#F4FBF3"
+    }
 }

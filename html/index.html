@@ -7,13 +7,17 @@
 
     <meta name="generator" content="sphinx-4.4.0, furo 2022.04.07"/>
         <title>Welcome to GALUP’s Trainings</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=68f4518137b9aefe99b631505a2064c3c42c9852" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+<!-- removing these did nothing -->
+    <!-- <link rel="stylesheet" type="text/css" href="_static/pygments.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" /> -->
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=68f4518137b9aefe99b631505a2064c3c42c9852" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     <link rel="stylesheet" type="text/css" href="_static/customcss.css"/>
+<!--  -->
+    <!-- <link rel="stylesheet" type="text/css" href="_static/toggle-bootstrap-dark.css"/>
+    <link rel="stylesheet" type="text/css" href="_static/toggle-bootstrap.css"/> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -27,18 +31,16 @@
   @media not print {
     body[data-theme="dark"] {
       --color-code-background: #202020;
-      --color-code-foreground: #d0d0d0;
-  
+  --color-code-foreground: #d0d0d0;
+  background-color: black;
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
         --color-code-background: #202020;
-        --color-code-foreground: #d0d0d0;
-  --
-  
+    --color-code-foreground: #d0d0d0;
+      background-color: black;
       }
     }
-
     @media screen and (max-width: 1200px) {
     nav.navbegone{
         display: none;
@@ -53,7 +55,8 @@
 
 
 </head>
-  <body>
+  <body class="bootstrap"> 
+    
     
     <script>
       document.body.dataset.theme = localStorage.getItem("theme") || "auto";
@@ -107,7 +110,7 @@
 </nav> -->
 
 <!-- bootstrap nav -->
-<nav class="navbar shadow navbegone navbar-expand-lg fixed-top bg-white">
+<nav class="navbar shadow navbegone navbar-expand-lg short fixed-top bg-white navbar-themed">
   <div class="container-fluid">
     <a class="navbar-brand" href="/html/index.html">
       <img class="navbar-brand-logo" src="/GithubPagesImages/GALUP-logo-final-color-2020.svg" alt="" width="30" height="24">
@@ -139,8 +142,12 @@
           <i class ="fa fa-fw fa-github"></i></a>
           <a href="https://twitter.com/galupghana">
             <i class="fa fa-fw fa-twitter"></i></a>
-      </div>
-    <!-- </div> -->
+              <!-- <a class="inline-toggle"
+                  href="javascript:document.getElementsByTagName('body')[0].setAttribute('class', 'bootstrap-dark');">Dark</a>
+              <a class="inline-toggle"
+                  href="javascript:document.getElementsByTagName('body')[0].setAttribute('class', 'bootstrap');">Light</a> -->
+      <!-- </div> -->
+    </div>
   </div>
 </nav>
 
@@ -248,16 +255,17 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   
-  <span class="sidebar-brand-text">GALUP Training</span>
+  <span class="sidebar-brand-text">Contents</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
-<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+<div id="searchbox"></div><div class="sidebar-scroll">
+<div class="sidebar-tree">
   <ul>
-  <li class="toctree-l1 has-children"><a class="reference internal" href="/html/Training1ReadMe.html">Workshop 1: Land-Use Suitability Analysis with QGIS Tools</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+  <li class="toctree-l1 has-children"><a class="reference internal" href="/html/Training1ReadMe.html">Workshop 1: Land-Use Suitability Analysis with QGIS Tools</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox" checked><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
   <li class="toctree-l2"><a class="reference internal" href="/html/Training1Module1.html">Module 1: Software and Data Preparation</a></li>
   <li class="toctree-l2"><a class="reference internal" href="/html/Training1Module2.html">Module 2: Introduction to LUCIS-OPEN Tools for QGIS</a></li>
   <li class="toctree-l2"><a class="reference internal" href="/html/Training1Module3.html">Module 3: Create Suitability Models with QGIS Graphical Modeler</a></li>
@@ -463,5 +471,14 @@
     <script src="_static/doctools.js"></script>
     <script src="_static/scripts/furo.js"></script>
     <script src="_static/bootstrap.js"></script>
+
+    <!-- copy from navbar dark html repo -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script> -->
     </body>
 </html>
