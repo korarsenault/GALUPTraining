@@ -32,7 +32,14 @@ p {
     font-size: 1em;
     line-height: 1.5;}
 
-nav.navbar-main {
+nav {
+    vertical-align: middle;
+    aligh-items: center;
+}
+
+
+
+    /* nav.navbar-main {
     background-color: white;
     position: fixed;
     top: 0;
@@ -41,70 +48,68 @@ nav.navbar-main {
     margin-right: auto;    
     margin-left: auto;    
     width: 100%;
-    /* same height as the py-data theme */
     height: 60px;
     z-index: 1000;
     vertical-align: middle;
     display: flex;
     align-items: center;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-}
+} */
 
 nav.short {
     height: 60px;
 }
 
-
+/* 
 img.navbar-brand-logo {
     margin-left: 90px;
-}
+} */
 
-a.logo-title {
+/* a.logo-title {
     align-items: center;
-       /* position: relative; */
-}
+} */
 
-div.navbar-center {
+/* div.navbar-center {
     position: relative;
     left: 90px;
+} */
+
+.line{
+    display: inline-block;
+    
 }
 
-li.nav-item {
-    margin: 10px;
-}
-
-a.nav-link {
+/* a.nav-link {
     text-decoration: none;
     color: black;
-}
+} */
 
-div.right-icon {
+/* div.right-icon {
     padding-right: 210px;
-}
+} */
 
-div.navbar-right-item {
+/* div.navbar-right-item {
     position: relative;
-    /* left: 500px; */
     display: inline;
     vertical-align: middle;
     align-items: center;
-}
+} */
 
-img.icon-middle{
+/* img.icon-middle{
     vertical-align: middle;
     align-items: center;
-}
+} */
 
 
-a.icon-link {
+/* a.icon-link {
     vertical-align: middle;
     align-items: center;
-}
+} */
 
-i.icon-img {
+/* i.icon-img {
     vertical-align: middle;
     padding-bottom: 5px;
-}
+} */
 
 nav * {
     display: inline
