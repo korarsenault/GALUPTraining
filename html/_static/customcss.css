@@ -43,6 +43,12 @@ p {
     position: relative;
 }
 
+.hard-left {
+    padding-left: 50px;
+    left: 50px;
+    position: relative;
+}
+
 
     /* nav.navbar-main {
     background-color: white;
