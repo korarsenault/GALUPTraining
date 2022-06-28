@@ -32,11 +32,16 @@ p {
     font-size: 1em;
     line-height: 1.5;}
 
-nav {
+/* nav {
     vertical-align: middle;
     aligh-items: center;
-}
+} */
 
+.left {
+    padding-left: 30px;
+    left: 30px;
+    position: relative;
+}
 
 
     /* nav.navbar-main {
