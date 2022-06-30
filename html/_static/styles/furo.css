@@ -395,7 +395,7 @@ html body .only-dark {
             --color-foreground-secondary: #9ca0a5;
             --color-foreground-muted: #81868d;
             --color-foreground-border: #666;
-            --color-background-primary: #131416;
+            --color-background-primary: #383838;
             --color-background-secondary: #1a1c1e;
             --color-background-hover: #1e2124;
             --color-background-hover--transparent: #1e212400;
@@ -622,13 +622,13 @@ article {
 /* changed form var(--color-sidebar-background) to white,  */
 
 .sidebar-drawer {
-    background: white;
+    /* background: white; */
     border-right: 1px solid var(--color-sidebar-background-border);
     box-sizing: border-box;
     display: flex;
-    justify-content: flex-end;
-    min-width: 15em;
-    width: calc(50% - 26em)
+    justify-content: flex-start;
+    min-width: 18em;
+    width: calc(50% - 24em)
 }
 
 .sidebar-container,

@@ -12,18 +12,19 @@
     <!-- <link rel="stylesheet" type="text/css" href="_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" /> -->
     <!-- <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" /> -->
     <!-- <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" /> -->
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=68f4518137b9aefe99b631505a2064c3c42c9852" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
-    <link rel="stylesheet" type="text/css" href="_static/customcss.css"/>
+
 <!-- CDN to bootsrap instead -->
     <!-- <link rel="stylesheet" type="text/css" href="_static/toggle-bootstrap-dark.css"/>
     <link rel="stylesheet" type="text/css" href="_static/toggle-bootstrap.css"/> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=68f4518137b9aefe99b631505a2064c3c42c9852" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    <link rel="stylesheet" type="text/css" href="_static/customcss.css"/>
+    
 
 <style>
-  body {
+  /* body {
     --color-code-background: #f8f8f8;
   --color-code-foreground: black;
   
@@ -40,7 +41,7 @@
     --color-code-foreground: #d0d0d0;
       background-color: black;
       }
-    }
+    } */
     @media screen and (max-width: 1200px) {
     nav.navbegone{
         display: none;
@@ -111,7 +112,7 @@
 
 <!-- bootstrap nav -->
 <!-- <div class="container" id="banner"></div> -->
-  <nav class="navbar shadow navbegone navbar-expand-lg short fixed-top bg-white navbar-themed" id="navbar-main">
+  <nav class="navbar shadow navbegone navbar-expand-lg short fixed-top navbar-themed" id="navbar-main">
       <div class="container-lg">
         <!-- <div class="row"> -->
           <div class="col-lg-2">
@@ -237,7 +238,7 @@
 
 
 
-<div class="page">
+<div class="container-xl">
   <header class="mobile-header">
     <div class="header-left">
       <label class="nav-overlay-icon" for="__navigation">
@@ -263,203 +264,216 @@
       </label>
     </div>
   </header>
-  <aside class="sidebar-drawer">
-    <div class="sidebar-container">
-      
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
-  
-  
-  <span class="sidebar-brand-text">Contents</span>
-  
-</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
-  <input type="hidden" name="check_keywords" value="yes">
-  <input type="hidden" name="area" value="default">
-</form>
-<div id="searchbox"></div><div class="sidebar-scroll">
-<div class="sidebar-tree">
-  <ul>
-    <li class="toctree-l1 has-children"><a class="reference internal" href="/html/Training1ReadMe.html">Workshop 1: Land-Use Suitability Analysis with QGIS Tools</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox" checked><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-    <li class="toctree-l2"><a class="reference internal" href="/html/Training1Module1.html">Module 1: Software and Data Preparation</a></li>
-    <li class="toctree-l2"><a class="reference internal" href="/html/Training1Module2.html">Module 2: Introduction to LUCIS-OPEN Tools for QGIS</a></li>
-    <li class="toctree-l2"><a class="reference internal" href="/html/Training1Module3.html">Module 3: Create Suitability Models with QGIS Graphical Modeler</a></li>
-    <li class="toctree-l2"><a class="reference internal" href="/html/Training1Module4.html">Module 4: Aggregate Results to Make Land-Use Decisions</a></li>
-  </ul>
-</li>
-<ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="/html/Training2ReadMe.html">Workshop 2: Introduction to Satellite Remote Sensing</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-  <li class="toctree-l2"><a class="reference internal" href="/html/Training2Module1.html">Module 1: Introduction to Remote Sensing (RS)</a></li>
-  <li class="toctree-l2"><a class="reference internal" href="/html/Training2Module2.html">Module 2: RS Applications using Google Earth Engine</a></li>
-  <li class="toctree-l2"><a class="reference internal" href="/html/Training2Module3.html">Module 3: Common RS Indices and Environmental Variables</a></li>
-  <li class="toctree-l2"><a class="reference internal" href="/html/Training2Module4.html">Module 4: Land Cover Classification</a></li>
-  </ul>
-</li>
-<ul>
-  <li class="toctree-l1 has-children"><a class="reference internal" href="/html/Training3ReadMe.html">Workshop 3: Integrated Decision Units for Land Use Suitability Modeling</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-    <li class="toctree-l2"><a class="reference internal" href="/html/Training3Module1.html">Module 1: Integrated Decision Units (IDUs) for Land Use Suitability Modeling</a></li>
-  </ul>
-  </ul>
-</div>
-</div>
-
-      </div>
-      
-    </div>
-  </aside>
-  
-  
-  <div class="main">
-    <div class="content">
-      <div class="article-container">
-        <a href="#" class="back-to-top muted-link">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
-          </svg>
-          <span>Back to top</span>
-        </a>
-        <div class="content-icon-container"><div class="theme-toggle-container theme-toggle-content">
-            <button class="theme-toggle">
-              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
-              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
-              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
-              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
-            </button>
-          </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
-            <div class="visually-hidden">Toggle table of contents sidebar</div>
-            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
-          </label>
+  <div class="row">
+    <!-- left panel -->
+    <aside class="sidebar-drawer col-12 col-md-3 bd-sidebar">
+      <div class="sidebar-container">
+        <div class="sidebar-sticky">
+          <a class="sidebar-brand" href="index.html">
+            <span class="sidebar-brand-text">Contents</span>
+          </a>
+          <form class="sidebar-search-container" method="get" action="search.html" role="search">
+            <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+            <input type="hidden" name="check_keywords" value="yes">
+            <input type="hidden" name="area" value="default">
+          </form>
+      <div id="searchbox"></div>
+      <div class="sidebar-scroll">
+        <div class="sidebar-tree">
+          <ul>
+            <li class="toctree-l1 has-children">
+              <a class="reference internal" href="/html/Training1ReadMe.html">Workshop 1: Land-Use Suitability Analysis with QGIS Tools</a>
+              <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox" checked>
+              <label for="toctree-checkbox-1">
+              <div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label>
+              <ul>
+                <li class="toctree-l2"><a class="reference internal" href="/html/Training1Module1.html">Module 1: Software and Data Preparation</a></li>
+                <li class="toctree-l2"><a class="reference internal" href="/html/Training1Module2.html">Module 2: Introduction to LUCIS-OPEN Tools for QGIS</a></li>
+                <li class="toctree-l2"><a class="reference internal" href="/html/Training1Module3.html">Module 3: Create Suitability Models with QGIS Graphical Modeler</a></li>
+                <li class="toctree-l2"><a class="reference internal" href="/html/Training1Module4.html">Module 4: Aggregate Results to Make Land-Use Decisions</a></li>
+              </ul>
+            </li>
+            <li class="toctree-l1 has-children">
+              <a class="reference internal" href="/html/Training2ReadMe.html">Workshop 2: Introduction to Satellite Remote Sensing</a>
+              <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"><label for="toctree-checkbox-2">
+                <div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label>
+                <ul>
+                  <li class="toctree-l2"><a class="reference internal" href="/html/Training2Module1.html">Module 1: Introduction to Remote Sensing (RS)</a></li>
+                  <li class="toctree-l2"><a class="reference internal" href="/html/Training2Module2.html">Module 2: RS Applications using Google Earth Engine</a></li>
+                  <li class="toctree-l2"><a class="reference internal" href="/html/Training2Module3.html">Module 3: Common RS Indices and Environmental Variables</a></li>
+                  <li class="toctree-l2"><a class="reference internal" href="/html/Training2Module4.html">Module 4: Land Cover Classification</a></li>
+                </ul>
+            </li>
+            <li class="toctree-l1 has-children"><a class="reference internal" href="/html/Training3ReadMe.html">Workshop 3: Integrated Decision Units for Land Use Suitability Modeling</a>
+              <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"><label for="toctree-checkbox-3">
+                <div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label>
+                <ul>
+                  <li class="toctree-l2"><a class="reference internal" href="/html/Training3Module1.html">Module 1: Integrated Decision Units (IDUs) for Land Use Suitability Modeling</a>
+                  </li>
+                </ul>
+            </li>
+          </ul>
         </div>
+      </div>
+  
+      </div>
+        
+      </div>
+    </aside>
 
-<article role="main">
-<section id="welcome-to-galup-s-trainings">
-  <h1>Welcome to GALUP’s Trainings
-    <a class="headerlink" href="#welcome-to-galup-s-trainings" title="Permalink to this headline">#</a>
-  </h1>
-  <p>One of GALUP’s objectives is to help build local capacity in applying tools
-    empowered by Remote Sensing (RS) and Geographic Information System (GIS)
-    technologies to inform and ensure sustainable land use practices.
-  </p>
-  <div class="sphinx-bs container pb-4 docutils">
-    <div class="row docutils">
-      <div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-        <div class="card w-100 strong-shadow docutils">
-          <img alt="img-top" class="card-img-top icon-l icon-r" 
-          src="/GithubPagesImages/map-outline.svg"/>
-          <div class="card-body text-center docutils">
-            <p class="card-text"><b>Workshop 1: Land-Use Suitability Analysis 
-            with QGIS Tools</b><br><br>
-            The first GALUP workshop aims at laying a foundation of core
-            concepts and techniques used in land-use suitability analysis,
-            of which the output will help inform land-use decision making.</p>
+    <!-- main content -->
+    <div class="main col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content">
+      <div class="content">
+        <div class="article-container">
+          <a href="#" class="back-to-top muted-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+            </svg>
+            <span>Back to top</span>
+          </a>
+          <div class="content-icon-container"><div class="theme-toggle-container theme-toggle-content">
+              <button class="theme-toggle">
+                <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+                <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+                <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+                <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+              </button>
+            </div>
+            <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+              <div class="visually-hidden">Toggle table of contents sidebar</div>
+              <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+            </label>
+          </div>
+  
+  <article role="main">
+  <section id="welcome-to-galup-s-trainings">
+    <h1>Welcome to GALUP’s Trainings
+      <a class="headerlink" href="#welcome-to-galup-s-trainings" title="Permalink to this headline">#</a>
+    </h1>
+    <p>One of GALUP’s objectives is to help build local capacity in applying tools
+      empowered by Remote Sensing (RS) and Geographic Information System (GIS)
+      technologies to inform and ensure sustainable land use practices.
+    </p>
+    <div class="sphinx-bs container pb-4 docutils">
+      <div class="row docutils">
+        <div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+          <div class="card w-100 strong-shadow docutils">
+            <img alt="img-top" class="card-img-top icon-l icon-r" 
+            src="/GithubPagesImages/map-outline.svg"/>
+            <div class="card-body text-center docutils">
+              <p class="card-text"><b>Workshop 1: Land-Use Suitability Analysis 
+              with QGIS Tools</b><br><br>
+              The first GALUP workshop aims at laying a foundation of core
+              concepts and techniques used in land-use suitability analysis,
+              of which the output will help inform land-use decision making.</p>
+          </div>
+          <p class="card-text text-center">
+            <a class="no-under sphinx-bs btn text-wrap btn-success reference external"
+              href="/html/Training1ReadMe.html">
+              <span>Learn More</span></a></p>
+            <br>
+          </div>
+    </div>
+  
+    <div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+      <div class="card w-100 strong-shadow docutils">
+        <img alt="img-top" class="card-img-top icon-l icon-r" 
+        src="/GithubPagesImages/earth-outline.svg"/>
+        <div class="card-body text-center docutils">
+          <p class="card-text">
+            <b>Workshop 2: Introduction to Satellite Remote Sensing</b><br><br>
+            The second GALUP workshop aims at training core concepts in remote
+            sensing applications for land use planning.
+          </p>
         </div>
         <p class="card-text text-center">
-          <a class="no-under sphinx-bs btn text-wrap btn-success reference external"
-            href="/html/Training1ReadMe.html">
-            <span>Learn More</span></a></p>
-          <br>
+        <a class="no-under sphinx-bs btn text-wrap btn-success reference external" 
+        href="/html/Training2ReadMe.html">
+        <span>Learn More</span></a>
+      </p>
+      <br>
+      </div>
+    </div>
+  
+  
+    <div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+      <div class="card w-100 strong-shadow docutils">
+        <img alt="img-top" class="card-img-top icon-l icon-r" 
+        src="/GithubPagesImages/desktop-outline.svg"/>
+        <div class="card-body text-center docutils">
+          <p class="card-text">
+            <b>Workshop 3: Integrated Decision Units for 
+            Land Use Suitability Modeling</b><br><br>
+            The third GALUP workshop focuses on the creation of Integrated 
+            Decision Units (IDUs) using geoprocessing tools in QGIS. 
+            IDUs are land units, within which land properties (or attributes) 
+            are homogeneous.
+          </p>
         </div>
-  </div>
-
-  <div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-    <div class="card w-100 strong-shadow docutils">
-      <img alt="img-top" class="card-img-top icon-l icon-r" 
-      src="/GithubPagesImages/earth-outline.svg"/>
-      <div class="card-body text-center docutils">
-        <p class="card-text">
-          <b>Workshop 2: Introduction to Satellite Remote Sensing</b><br><br>
-          The second GALUP workshop aims at training core concepts in remote
-          sensing applications for land use planning.
-        </p>
+        <p class="card-text text-center">
+        <a class="no-under sphinx-bs btn text-wrap btn-success reference external" 
+        href="/html/Training3ReadMe.html">
+        <span>Learn More</span></a>
+      </p>
+      <br>
       </div>
-      <p class="card-text text-center">
-      <a class="no-under sphinx-bs btn text-wrap btn-success reference external" 
-      href="/html/Training2ReadMe.html">
-      <span>Learn More</span></a>
-    </p>
-    <br>
     </div>
-  </div>
-
-
-  <div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-    <div class="card w-100 strong-shadow docutils">
-      <img alt="img-top" class="card-img-top icon-l icon-r" 
-      src="/GithubPagesImages/desktop-outline.svg"/>
-      <div class="card-body text-center docutils">
-        <p class="card-text">
-          <b>Workshop 3: Integrated Decision Units for 
-          Land Use Suitability Modeling</b><br><br>
-          The third GALUP workshop focuses on the creation of Integrated 
-          Decision Units (IDUs) using geoprocessing tools in QGIS. 
-          IDUs are land units, within which land properties (or attributes) 
-          are homogeneous.
-        </p>
-      </div>
-      <p class="card-text text-center">
-      <a class="no-under sphinx-bs btn text-wrap btn-success reference external" 
-      href="/html/Training3ReadMe.html">
-      <span>Learn More</span></a>
-    </p>
-    <br>
-    </div>
-  </div>
-
-
-  <div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-    <!-- <div class="card w-100 shadow docutils">
-      <img alt="img-top" class="card-img-top icon-l icon-r" 
-      src="/GithubPagesImages/desktop-outline.svg"/>
-      <div class="card-body text-center docutils">
-        <p class="card-text">
-          <b>Workshop 3:</b> Integrated Decision Units for 
-          Land Use Suitability Modeling
-        </p>
-      </div>
-      <p class="card-text text-center">
-      <a class="sphinx-bs btn text-wrap btn-success reference external" 
-      href="/html/Training3ReadMe.html">
-      <span>Learn More</span></a>
-    </p>
-    <br> -->
-    </div>
-  </div>
-</section>
-
-        </article>
-      </div>
-      <footer>
-        
-        <div class="related-pages">
-          
-          
+  
+  
+    <div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+      <!-- <div class="card w-100 shadow docutils">
+        <img alt="img-top" class="card-img-top icon-l icon-r" 
+        src="/GithubPagesImages/desktop-outline.svg"/>
+        <div class="card-body text-center docutils">
+          <p class="card-text">
+            <b>Workshop 3:</b> Integrated Decision Units for 
+            Land Use Suitability Modeling
+          </p>
         </div>
-        <div class="bottom-of-page">
-          <div clagss="left-details">
-            <div class="copyright">
-                Copyright &#169; 2022, The GALUP Team
-            </div>
-            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+        <p class="card-text text-center">
+        <a class="sphinx-bs btn text-wrap btn-success reference external" 
+        href="/html/Training3ReadMe.html">
+        <span>Learn More</span></a>
+      </p>
+      <br> -->
+      </div>
+    </div>
+  </section>
+  
+          </article>
+        </div>
+        <footer>
+          
+          <div class="related-pages">
             
-            <a href="https://github.com/pradyunsg/furo">Furo</a>
             
           </div>
-          <div class="right-details">
-            <div class="icons">
+          <div class="bottom-of-page">
+            <div clagss="left-details">
+              <div class="copyright">
+                  Copyright &#169; 2022, The GALUP Team
+              </div>
+              Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+              
+              <a href="https://github.com/pradyunsg/furo">Furo</a>
               
             </div>
+            <div class="right-details">
+              <div class="icons">
+                
+              </div>
+            </div>
           </div>
-        </div>
-        
-      </footer>
- 
+          
+        </footer>
+   
+      </div>
+      <!-- added div to close main tag-->
     </div>
-    <!-- added div to close main tag-->
-    </div>
- 
-    
-<!-- Gave it column size -->
-    <aside class="toc-drawer col-3">      
+
+    <!-- right panel -->
+    <!-- Gave it column size -->
+    <aside class="toc-drawer d-none d-xl-block col-xl-2 bd-toc">      
       <div class="toc-sticky toc-scroll ">
         <div class="toc-title-container">
           <span class="toc-title">
@@ -481,6 +495,8 @@
           </div>
         </div>  
       </aside>
+
+  </div>
   </div>
 </div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>

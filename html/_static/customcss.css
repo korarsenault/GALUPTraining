@@ -154,3 +154,34 @@ nav * {
     display: flex !important;
     flex-basis: auto
 } */
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1400px;
+    }
+}
+
+body[data-theme=dark] {
+    --color-navbar-color: white;
+    --color-navbar-background: black;
+    
+}
+
+body{
+    --color-navbar-color: rgb(0, 0, 0);
+    --color-navbar-background: rgb(255, 255, 255);
+    
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--color-navbar-colors);
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background: var(--color-navbar-background);
+}
