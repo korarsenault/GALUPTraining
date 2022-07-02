@@ -19,7 +19,7 @@ div.strong-shadow {
 /* made text smaller and increased line height, copied from Pandas documentatioin */
 
 /* this can and should change with diff themes */
-body { padding-top: 80px; } 
+aside { padding-top: 60px; } 
 
 .stickme {
     position: -webkit-sticky;
@@ -163,19 +163,26 @@ nav * {
 
 body[data-theme=dark] {
     --color-navbar-color: white;
-    --color-navbar-background: black;
-    
+    --color-navbar-background: #282121;
+    --color-navbar-title: white;
+    --icon-color: white;    
 }
 
 body{
-    --color-navbar-color: rgb(0, 0, 0);
+    --color-navbar-color: #212121;
     --color-navbar-background: rgb(255, 255, 255);
-    
+    --color-navbar-title: #212121;    
 }
+
+
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
     color: var(--color-navbar-colors);
 }
+
+.navbar-brand {color: var(--color-navbar-title)}
+
+.fa {color: var(--icon-color)}
 
 .fixed-top {
     position: fixed;
@@ -185,3 +192,7 @@ body{
     z-index: 1030;
     background: var(--color-navbar-background);
 }
+
+/* 282828 */
+
+/* 212121 */
