@@ -358,7 +358,7 @@ html body .only-dark {
         --color-foreground-secondary: #9ca0a5;
         --color-foreground-muted: #81868d;
         --color-foreground-border: #666;
-        --color-background-primary: #131416;
+        --color-background-primary: #212121;
         --color-background-secondary: #1a1c1e;
         --color-background-hover: #1e2124;
         --color-background-hover--transparent: #1e212400;
@@ -377,7 +377,7 @@ html body .only-dark {
         --color-card-border: var(--color-background-secondary);
         --color-card-background: #18181a;
         --color-card-marginals-background: var(--color-background-hover);
-        --color-toc-background: #131416;
+        --color-toc-background: #212121;
     }
 
     html body[data-theme=dark] .only-light {

@@ -1,5 +1,3 @@
-
-
 /* got rid of underlines on */
 a.no-under {
     text-decoration: none;
@@ -19,7 +17,16 @@ div.strong-shadow {
 /* made text smaller and increased line height, copied from Pandas documentatioin */
 
 /* this can and should change with diff themes */
-aside { padding-top: 60px; } 
+
+.containme {
+    padding-top: 60px;
+}
+
+.containme2 {
+    padding-top: 50px
+}
+
+aside {position: sticky;} 
 
 .stickme {
     position: -webkit-sticky;
@@ -163,24 +170,35 @@ nav * {
 
 body[data-theme=dark] {
     --color-navbar-color: white;
-    --color-navbar-background: #282121;
+    --color-navbar-background: #282828;
     --color-navbar-title: white;
     --icon-color: white;    
+    --color-hover-nav: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0);
 }
+
+
 
 body{
     --color-navbar-color: #212121;
     --color-navbar-background: rgb(255, 255, 255);
     --color-navbar-title: #212121;    
+    --color-hover-nav: #212121;
+    
 }
-
-
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
     color: var(--color-navbar-colors);
 }
 
 .navbar-brand {color: var(--color-navbar-title)}
+
+
+.navbar-brand:hover, .navbar-brand:focus {
+    text-decoration: none;
+    color: var(--color-hover-nav)
+  }
+  
 
 .fa {color: var(--icon-color)}
 
@@ -189,10 +207,6 @@ body{
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030;
+    /* z-index: 1030; */
     background: var(--color-navbar-background);
 }
-
-/* 282828 */
-
-/* 212121 */
