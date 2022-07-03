@@ -129,7 +129,8 @@ img.navbar-brand-logo {
 } */
 
 nav * {
-    display: inline
+    display: inline-block;
+    vertical-align: middle;
 }
 
 @media screen and (max-width: 1400px) {
@@ -209,4 +210,8 @@ body{
     left: 0;
     /* z-index: 1030; */
     background: var(--color-navbar-background);
+}
+
+.padme {
+    padding-left: 100px;
 }
