@@ -39,10 +39,6 @@ p {
     font-size: 1em;
     line-height: 1.5;}
 
-/* nav {
-    vertical-align: middle;
-    aligh-items: center;
-} */
 
 .left {
     padding-left: 30px;
@@ -215,3 +211,12 @@ body{
 .padme {
     padding-left: 100px;
 }
+
+.navbottom {
+    padding-bottom: 20px;
+}
+
+.linkalign {
+    padding-bottom:5px
+}
+
