@@ -20,6 +20,7 @@ Search.setIndex({
       "Training3ReadMe",
       "TrainingLanding",
       "index",
+      "loremipsum"
     ],
     envversion: {
       "sphinx.domains.c": 2,
@@ -55,6 +56,7 @@ Search.setIndex({
       "Training3ReadMe.rst",
       "TrainingLanding.rst",
       "index.rst",
+      "loremipsum.rst"
     ],
     objects: {},
     objnames: {},
