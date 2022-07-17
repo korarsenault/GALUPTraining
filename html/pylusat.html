@@ -6,97 +6,43 @@
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" />
 
     <meta name="generator" content="sphinx-4.4.0, furo 2022.04.07"/>
-        <title>Workshop 2: Introduction to Satellite Remote Sensing - GALUP Training</title>
+        <title>PyLUSAT for QGIS - GALUP documentation</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-        <!-- <link rel="stylesheet" type="text/css" href="_static/pygments.css" /> -->
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=68f4518137b9aefe99b631505a2064c3c42c9852" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
-    <link rel="stylesheet" type="text/css" href="_static/customcss.css"/>
+        <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=68f4518137b9aefe99b631505a2064c3c42c9852" />
+      <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+      <link rel="stylesheet" type="text/css" href="_static/customcss.css"/>
+ 
     
 
 
-    <style>
-      body {
-        --color-code-background: #f8f8f8;
-      --color-code-foreground: black;
-      
-      }
-      @media not print {
-        body[data-theme="dark"] {
-          --color-code-background: #202020;
-          --color-code-foreground: #d0d0d0;
-      
-        }
-        @media (prefers-color-scheme: dark) {
-          body:not([data-theme="light"]) {
-            --color-code-background: #202020;
-            --color-code-foreground: #d0d0d0;
-      --
-      
-          }
-        }
-    
-        @media screen and (max-width: 1200px) {
-        nav.navbegone{
-            display: none;
-        }
-        body {
-          padding: 0;
-        }
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
     }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
       }
-    </style>
-    </head>
-  <body class="bootsrap">
+    }
+  }
+</style></head>
+  <body>
     
     <script>
       document.body.dataset.theme = localStorage.getItem("theme") || "auto";
     </script>
     
-    <!-- <nav class="navbar navbegone navbar-main navbar-expand-sm">
-      <div id="navbar-left">
-        <a class="logo-title" href="../index.html">
-        <img class="navbar-brand-logo" src="/GithubPagesImages/GALUP-logo-final-color-2020.svg"/>
-          &nbsp; GALUP Training
-        </a>
-      </div>
-      <div class="navbar-center">
-        <ul id="navbar-main-elements" class="navbar-nav">
-          <li class="nav-item">
-          <a class="nav-link" href="#">
-            Placeholder 1
-          </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-            Placeholder 2
-            </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-              Placeholder 3
-              </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                Placeholder 4
-                </a>
-                </li>
-        </ul>
-      </div>
-      <div id="navbar-right">
-        <div class="navbar-right-item">
-          <a class="icon-link" href="https://github.com/SERVIR-WA/GALUP">
-            <i class ="fa fa-fw fa-github"></i></a>
-          <a class="icon-link" href="https://twitter.com/galupghana">
-              <i class="fa fa-fw fa-twitter"></i></a>
-        </div>
-      </div>
-    </div>
-    </nav> -->
-
     <nav class="navbar shadow navbegone navbar-expand-lg short fixed-top navbar-themed">
       <div class="container-lg" id="banner">
         <!-- <div class="row"> -->
@@ -113,7 +59,7 @@
           <!-- <div id="navbar-center"> -->
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="pylusat.html">Install PyLUSATQ</a>
+                <a class="nav-link active" aria-current="page" href="#">Install PyLUSATQ</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Documentation</a>
@@ -149,8 +95,8 @@
       </div>
       
     </div>
-  </nav>
-  
+    </nav>
+
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="svg-toc" viewBox="0 0 24 24">
     <title>Contents</title>
@@ -232,7 +178,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../index.html"><div class="brand">GALUP Training</div></a>
+      <a href="index.html"><div class="brand">GALUP  documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -250,6 +196,7 @@
     </div>
   </header>
   <div class="row">
+
     <aside class="sidebar-drawer col-12 col-md-3 bd-sidebar">
       <div class="toc-sticky containme">
       <div class="sidebar-container ">
@@ -301,12 +248,12 @@
         </div>
         </div>
       </div>
-  
+   
       </div>
-        
+       
       </div>
     </aside>
-
+  
   <div class="main col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content">
     <div class="content">
       <div class="article-container">
@@ -330,42 +277,92 @@
           </label>
         </div>
         <article role="main">
-          <section id="workshop-2-introduction-to-satellite-remote-sensing">
-<h1>Workshop 2: Introduction to Satellite Remote Sensing<a class="headerlink" href="#workshop-2-introduction-to-satellite-remote-sensing" title="Permalink to this headline">#</a></h1>
-<blockquote>
-<div><p><strong>Instructor</strong>: <a class="reference external" href="https://abe.ufl.edu/people/faculty/aditya-singh/">Dr. Aditya Singh</a> (<span class="raw-html-m2r"><ins>aditya01@<i></i>ufl.edu</ins></span>). <strong>Date</strong>: November 8 - December 6, 2021.</p>
-</div></blockquote>
-<section id="goal">
-<h2>Goal<a class="headerlink" href="#goal" title="Permalink to this headline">#</a></h2>
-<p>The second GALUP workshop aims at training core concepts in remote sensing applications for land use planning. Using Google Earth Engine (GEE), the participants will explore remote sensing data, learn common indices, and conduct land cover classification. This workshop is the first step toward understanding how RS data can be used for land-use assessments.</p>
-</section>
-<section id="objectives">
-<h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline">#</a></h2>
+          <section id="pylusat-for-qgis">
+<h1>PyLUSAT for QGIS<a class="headerlink" href="#pylusat-for-qgis" title="Permalink to this headline">#</a></h1>
+<p>The <strong>Python for Land-use Suitability Analysis Tools</strong> (PyLUSAT) is an
+open-source Python package dedicated for GIS-based land-use suitability
+modeling.
+This QGIS plugin provides interfaces to all functions in PyLUSAT to
+allow easy access and better integration into the QGIS <em>processing
+framework</em>.</p>
+<a class="reference external image-reference" href="screenshot/pylusatq_native.png"><img alt="pylusatq" src="screenshot/pylusatq_native.png"/></a>
+<p>For more information of PyLUSAT toolkit: <a class="reference external" href="https://github.com/chjch/pylusat">https://github.com/chjch/pylusat</a> or <a class="reference external" href="https://pypi.org/project/pylusat/">https://pypi.org/project/pylusat/</a></p>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>Understand information obtained from different wavelength bands</p></li>
-<li><p>Learn about remote sensing (RS) systems and datasets</p></li>
-<li><p>Become familiar with Google Earth Engine</p></li>
-<li><p>Learn about commonly used RS indices and environmental variables</p></li>
-<li><p>Conduct supervised land cover classification using GEE</p></li>
-<li><p>Interpret the results from different land cover classifications</p></li>
+<li><p>Windows (Windows 7, Windows 10 recommended) or macOS.</p></li>
+<li><p><em>QGIS version</em> 3.16 or higher (recommended).</p></li>
 </ul>
 </section>
-<section id="assignment-submission-and-help">
-<h2>Assignment Submission and Help<a class="headerlink" href="#assignment-submission-and-help" title="Permalink to this headline">#</a></h2>
-<p>The participants will have to sign into their GitHub accounts to submit assignments. Below is a video explaining how to submit the module assignments and how to request help through GitHub. Note: It may be convenient to open videos in the workshop in a new tab or window to easily navigate the GitHub page.</p>
-<p align="center">
-<a href="https://mediasite.video.ufl.edu/Mediasite/Play/9741afe237094a77aff3acbf6c2df8a91d" target="_blank">
-<img alt="GEE Tutorial" src="https://user-images.githubusercontent.com/84922404/139679866-11650dd6-855f-4420-82c1-fa0f4071ee37.png" width="800"/>
-</a>
-</p></section>
-<section id="modules">
-<h2>Modules<a class="headerlink" href="#modules" title="Permalink to this headline">#</a></h2>
-<ol class="arabic simple">
-<li><p><a class="reference external" href="/html/Training2Module1.html">Module 1 - Introduction to Remote Sensing (RS)</a></p></li>
-<li><p><a class="reference external" href="/html/Training2Module2.html">Module 2 - RS Applications using Google Earth Engine</a></p></li>
-<li><p><a class="reference external" href="/html/Training2Module3.html">Module 3 - Common RS Indices and Environmental Variables</a></p></li>
-<li><p><a class="reference external" href="/html/Training2Module4.html">Module 4 - Land Cover Classification</a></p></li>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h2>
+<section id="set-up-pylusat">
+<h3>1. Set up PyLUSAT<a class="headerlink" href="#set-up-pylusat" title="Permalink to this headline">#</a></h3>
+<p><strong>In Windows:</strong></p>
+<ol class="arabic">
+<li><p>We suggest two ways to set up your computer for PyLUSAT.<span class="raw-html-m2r"><br/></span>
+<strong>For beginners:</strong> :raw-html-m2r:<a href="#id1"><span class="problematic" id="id2">`</span></a>&lt;ol type=”a”&gt;</p>
+<blockquote>
+<div><p>&lt;li&gt; Visit &lt;a href=”<a class="reference external" href="https://github.com/chjch/pylusat-qgis">https://github.com/chjch/pylusat-qgis</a>”&gt;PyLUSAT
+GitHub repository&lt;/a&gt;. Click &lt;b&gt;Code&lt;/b&gt;, and then &lt;b&gt;Download ZIP&lt;/b&gt;
+to download the &lt;i&gt;pylusat-qgis&lt;/i&gt; repository.&lt;br&gt;
+&lt;li&gt;Copy <cite>pylusat_installer.bat</cite>, paste it under QGIS folder in your
+system.
+&lt;li&gt;&lt;b&gt;Right Click&lt;/b&gt; the copied &lt;i&gt;pylusat_installer.bat&lt;/i&gt; to
+&lt;b&gt;Run as administrator&lt;/b&gt;.</p>
+</div></blockquote>
+<p>&lt;/ol&gt;`<span class="raw-html-m2r"><br/></span></p>
+<dl class="simple">
+<dt><strong>OR, if you are familiar to work with terminals:</strong><span class="raw-html-m2r"><br/></span></dt><dd><p>Visit <span class="raw-html-m2r"><a href="https://github.com/chjch/pylusat-qgis">PyLUSAT
+GitHub repository</a></span>.
+Copy and paste the code in <em>pylusat_installer.bat</em> to your terminal
+under the QGIS folder and run it.<span class="raw-html-m2r"><br/></span></p>
+</dd>
+</dl>
+<blockquote>
+<div><p><strong>Note</strong>:<span class="raw-html-m2r"><br/></span>
+The <code class="docutils literal notranslate"><span class="pre">pylusat_installer.bat</span></code> file helps you clean your environment and
+install proper pre-required packages. Noted that: <span class="raw-html-m2r"><br/></span> 1. we use <code class="docutils literal notranslate"><span class="pre">pipwin</span></code>
+instead of <code class="docutils literal notranslate"><span class="pre">pip</span></code> or <code class="docutils literal notranslate"><span class="pre">conda</span></code> considering the compatibility of QGIS and the
+packages.<span class="raw-html-m2r"><br/></span> 2. we apply <code class="docutils literal notranslate"><span class="pre">pipwin</span> <span class="pre">refresh</span></code> to force a cache rebuild in case
+any potential conflicts.<span class="raw-html-m2r"><br/></span> For more information about the PyLUSAT
+plugin, please visit <a class="reference external" href="https://github.com/chjch/pylusat">https://github.com/chjch/pylusat</a>.</p>
+</div></blockquote>
+</li>
+<li><p>In the pop-up window:</p>
+<ol type="a">
+<li><b>Specify your root folder of QGIS</b>:
+   The same where you place the installer.
+   <li><b>Is the QGIS a long term release [Y/N]</b>:
+   Refer to the version you installed. Type <b>Y</b> for long term release.
+   <b>N</b> for short term release.</li>
+</li></ol></li>
+<li><p>Press <strong>Enter</strong> key and wait for the installation to complete.</p></li>
 </ol>
+<p><strong>In macOS:</strong>
+Use <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pylusat</span></code> in Python Command Prompt of <strong>QGIS</strong>.</p>
+</section>
+<section id="install-pylusat-plugin">
+<h3>2. Install PyLUSAT plugin<a class="headerlink" href="#install-pylusat-plugin" title="Permalink to this headline">#</a></h3>
+<ol class="arabic">
+<li><p>Download <strong>PyLUSAT plugin</strong>
+from <a class="reference external" href="https://plugins.qgis.org/plugins/pylusatq/">https://plugins.qgis.org/plugins/pylusatq/</a></p></li>
+<li><p>Find <strong>Plugins</strong> on the top panel in your <strong>QGIS Desktop</strong>,
+Click <strong>Manage and install plugins…</strong></p></li>
+<li><p>In <strong>Install from ZIP</strong> interface,
+browse and select the PyLUSAT ZIP file you download.</p></li>
+<li><p>Click Install Plugin, once finished, restart QGIS.
+..</p>
+<blockquote>
+<div><p><strong>Note:</strong><span class="raw-html-m2r"><br/></span>
+Once you click <strong>Install Plugin</strong>, you might see a pump-up window
+noticing “Couldn’t load plugin pylusatq”.
+Don’t worry, the installation will succeed after you restart QGIS.</p>
+</div></blockquote>
+</li>
+<li><p>Now you can find PyLUSAT tools in <strong>Processing Toolbox</strong> panel.</p></li>
+</ol>
+</section>
 </section>
 </section>
 
@@ -395,10 +392,10 @@
         </div>
         
       </footer>
+      </div>
     </div>
-    </div>
-    <aside class="toc-drawer d-none d-xl-block col-xl-2 bd-toc">
-      <div class="toc-sticky toc-scroll containme2">
+    <aside class="sidebar-drawer col-12 col-md-3 bd-sidebar">
+      <div class="toc-sticky containme">
         <div class="toc-title-container">
           <span class="toc-title">
             Contents
@@ -407,11 +404,13 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Workshop 2: Introduction to Satellite Remote Sensing</a><ul>
-<li><a class="reference internal" href="#goal">Goal</a></li>
-<li><a class="reference internal" href="#objectives">Objectives</a></li>
-<li><a class="reference internal" href="#assignment-submission-and-help">Assignment Submission and Help</a></li>
-<li><a class="reference internal" href="#modules">Modules</a></li>
+<li><a class="reference internal" href="#">PyLUSAT for QGIS</a><ul>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#installation">Installation</a><ul>
+<li><a class="reference internal" href="#set-up-pylusat">1. Set up PyLUSAT</a></li>
+<li><a class="reference internal" href="#install-pylusat-plugin">2. Install PyLUSAT plugin</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
