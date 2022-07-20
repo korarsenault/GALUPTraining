@@ -2237,9 +2237,9 @@ ul.search li {
     width: 100%
 }
 
-.sidebar-tree .reference:hover {
+/* .sidebar-tree .reference:hover {
     background: var(--color-sidebar-item-background--hover)
-}
+} */
 
 .sidebar-tree .reference.external:after {
     color: var(--color-sidebar-link-text);

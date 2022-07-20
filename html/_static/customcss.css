@@ -36,13 +36,17 @@ aside {position: sticky;}
 
 p {
     margin-bottom: 1.15rem;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.6;}
 
 p.card-text {
     margin-bottom: 1.15rem;
     font-size: 1em;
     line-height: 1.5
+}
+
+p.margin-top {
+    padding-top: 0.50em;
 }
 
 
@@ -206,6 +210,10 @@ body{
     color: var(--color-hover-nav)
 }
 
+.hov:hover, .hov:focus {
+    text-decoration: none;
+    color: var(--color-hover-nav)
+}
 
 .fa {color: var(--icon-color)}
 
@@ -232,4 +240,12 @@ body{
 
 .card-img-pad {
     padding-top: 20px
+}
+
+h1 {
+    font-size: 1.75em;
+}
+
+h2 {
+    font-size: 1.5em;
 }
