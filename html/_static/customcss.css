@@ -37,17 +37,18 @@ aside {position: sticky;}
 p {
     margin-bottom: 1.15rem;
     font-size: 15px;
-    line-height: 1.6;}
+    line-height: 1.6;
+}
 
 p.card-text {
     margin-bottom: 1.15rem;
     font-size: 1em;
     line-height: 1.5
 }
-
+/* 
 p.margin-top {
     padding-top: 0.50em;
-}
+} */
 
 
 .left {
@@ -244,8 +245,14 @@ body{
 
 h1 {
     font-size: 1.75em;
+    margin-bottom: 0.5em
 }
 
 h2 {
     font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.sidefont {
+    font-size: 13px;
 }
