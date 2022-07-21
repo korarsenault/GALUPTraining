@@ -256,3 +256,8 @@ h2 {
 .sidefont {
     font-size: 13px;
 }
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+}
