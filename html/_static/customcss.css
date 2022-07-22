@@ -257,19 +257,19 @@ h2 {
     font-size: 13px;
 }
 
-aside {
+.content aside {
     display: flex;
     flex-wrap: wrap;
 }
 
-b {
+.contetn b {
     font-size: 15px
 }
 
-li {
+.content li {
     font-size: 15px
 }
 
-strong {
+.content strong {
     font-size: 15px
 }   
