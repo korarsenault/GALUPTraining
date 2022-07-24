@@ -11,7 +11,7 @@ a.no-under {
     padding-right: 7rem !important
 }
 /* enhanced shadow on card */
-div.strong-shadow {
+.strong-shadow {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)
 }
 /* made text smaller and increased line height, copied from Pandas documentatioin */
