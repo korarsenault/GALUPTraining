@@ -273,3 +273,11 @@ h2 {
 .content strong {
     font-size: 15px
 }   
+
+ul {
+    list-style-position: outside;
+}
+
+ol {
+    list-style-position: outside;
+}
