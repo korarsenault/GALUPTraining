@@ -427,6 +427,11 @@ html body .only-dark {
     }
 }
 
+
+.preview-iframe {
+    background-color: var(--color-background-primary);
+  }
+
 body[data-theme=auto] .theme-toggle svg.theme-icon-when-auto,
 body[data-theme=dark] .theme-toggle svg.theme-icon-when-dark,
 body[data-theme=light] .theme-toggle svg.theme-icon-when-light {
