@@ -298,7 +298,7 @@ body {
     --color-api-pre-name: var(--color-problematic);
     --color-api-paren: var(--color-foreground-secondary);
     --color-api-keyword: var(--color-foreground-primary);
-    --color-highlight-on-target: #ffc;
+    --color-highlight-on-target: #fff;
     --color-inline-code-background: var(--color-background-secondary);
     --color-highlighted-background: #def;
     --color-highlighted-text: var(--color-foreground-primary);

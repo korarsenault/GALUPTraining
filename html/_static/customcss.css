@@ -281,3 +281,10 @@ ul {
 ol {
     list-style-position: outside;
 }
+
+:target::before {
+    content: '';
+    display: block;
+    height:      80px;
+    margin-top: -80px;
+}
