@@ -12,7 +12,7 @@ else if (bgColor == 'rgb(33, 33, 33)'){
     x.innerHTML=html2
 }
 else {
-    x.innerHTML='<p>invalid</p>'
+    x.innerHTML='<p>null</p>'
 }
 
 
