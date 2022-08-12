@@ -19,7 +19,7 @@
 
 project = 'GALUP'
 copyright = '2022, The GALUP Team'
-author = 'FIBER'
+author = ''
 
 
 # -- General configuration ---------------------------------------------------
