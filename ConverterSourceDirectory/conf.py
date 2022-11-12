@@ -19,7 +19,7 @@
 
 project = 'GALUP'
 copyright = '2022, The GALUP Team'
-author = ''
+author = 'FIBER'
 
 
 # -- General configuration ---------------------------------------------------
@@ -44,7 +44,6 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # a list of builtin themes.
 #
 html_theme = 'furo'
-html_theme_options = { "navbar_start": ["navbar-logo"], "navbar_center": ["navbar-nav"], "navbar_end": ["navbar-icon-links"]}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
