@@ -275,95 +275,95 @@
         </div>
         <article role="main">
           <section id="pylusat-for-qgis">
-            <h1>PyLUSAT for QGIS<a class="headerlink" href="#pylusat-for-qgis" title="Permalink to this headline">#</a></h1>
-            <p>The <strong>Python for Land-use Suitability Analysis Tools</strong> (PyLUSAT) is an
-            open-source Python package dedicated for GIS-based land-use suitability
-            modeling.
-            This QGIS plugin provides interfaces to all functions in PyLUSAT to
-            allow easy access and better integration into the QGIS <em>processing
-            framework</em>.</p>
-            <p><span class="raw-html-m2r"><img alt="pylusatq" height="600" src="screenshot/plugin_gui_mac.png"/></span></p>
-            <p>For more information of PyLUSAT toolkit: <a class="reference external" href="https://github.com/chjch/pylusat">https://github.com/chjch/pylusat</a> or <a class="reference external" href="https://pypi.org/project/pylusat/">https://pypi.org/project/pylusat/</a></p>
-            <section id="requirements">
-            <h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">#</a></h2>
-            <ul class="simple">
-            <li><p>Windows (Windows 7, Windows 10 recommended) or macOS.</p></li>
-            <li><p><em>QGIS version</em> 3.16 or higher (recommended).</p></li>
-            </ul>
-          </section>
-          <section id="installation">
-            <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h2>
-        <section id="set-up-pylusat">
-          <h3>1. Set up PyLUSAT<a class="headerlink" href="#set-up-pylusat" title="Permalink to this headline">#</a></h3>
-          <p><strong>In Windows:</strong></p>
-          <ol class="arabic">
-          <li><p>We suggest two ways to set up your computer for PyLUSAT.<span class="raw-html-m2r"><br/></span>
-          <strong>For beginners:</strong> <span class="raw-html-m2r"><ol type="a"></ol></span></p>
-          <blockquote>
-          <div><p><span class="raw-html-m2r"><li></li></span> Visit <span class="raw-html-m2r"><a href="https://github.com/chjch/pylusat-qgis">PyLUSAT
-          GitHub repository</a></span>. Click <span class="raw-html-m2r"><b>Code</b></span>, and then <span class="raw-html-m2r"><b>Download ZIP</b></span>
-          to download the <span class="raw-html-m2r"><i>pylusat-qgis</i></span> repository.<span class="raw-html-m2r"><br/></span>
-          <span class="raw-html-m2r"><li></li></span>Copy <code class="docutils literal notranslate"><span class="pre">pylusat_installer.bat</span></code>, paste it under QGIS folder in your
-          system. This file will install the prerequisite packages needed to use PyLUSATQ.
-          <span class="raw-html-m2r"><li></li></span><span class="raw-html-m2r"><b>Right Click</b></span> the copied <span class="raw-html-m2r"><i>pylusat_installer.bat</i></span> to
-          <span class="raw-html-m2r"><b>Run as administrator</b></span>.</p>
-          </div></blockquote>
-          <p>&lt;/ol&gt;<span class="raw-html-m2r"><br/></span></p>
-          <dl class="simple">
-          <dt><strong>OR, if you are familiar to work with terminals:</strong><span class="raw-html-m2r"><br/></span></dt><dd><p>Visit <span class="raw-html-m2r"><a href="https://github.com/chjch/pylusat-qgis">PyLUSAT
-          GitHub repository</a></span>.
-          Copy and paste the code in <em>pylusat_installer.bat</em> to your terminal
-          under the QGIS folder and run it.<span class="raw-html-m2r"><br/></span></p>
-          </dd>
-          </dl>
-          </li>
-          </ol>
-          <blockquote>
-          <div><p><strong>Note</strong>:<span class="raw-html-m2r"><br/></span>
-          The <code class="docutils literal notranslate"><span class="pre">pylusat_installer.bat</span></code> file helps you clean your environment and
-          install proper pre-required packages. Noted that: <span class="raw-html-m2r"><br/></span> 1. we use <code class="docutils literal notranslate"><span class="pre">pipwin</span></code>
-          instead of <code class="docutils literal notranslate"><span class="pre">pip</span></code> or <code class="docutils literal notranslate"><span class="pre">conda</span></code> considering the compatibility of QGIS and the
-          packages.<span class="raw-html-m2r"><br/></span> 2. we apply <code class="docutils literal notranslate"><span class="pre">pipwin</span> <span class="pre">refresh</span></code> to force a cache rebuild in case
-          any potential conflicts.<span class="raw-html-m2r"><br/></span> For more information about the PyLUSAT
-          plugin, please visit <a class="reference external" href="https://github.com/chjch/pylusat">https://github.com/chjch/pylusat</a>.</p>
-          </div></blockquote>
-          <ol class="arabic">
-          <li><p>In the pop-up window:</p>
-          <a class="reference external image-reference" href="screenshot/installer_terminal.png"><img alt="installer terminal" src="screenshot/installer_terminal.png"/></a>
-          <ol type="a">
-          <li><b>Specify your root folder of QGIS</b>:The same where you place the installer.
+<h1>PyLUSAT for QGIS<a class="headerlink" href="#pylusat-for-qgis" title="Permalink to this headline">#</a></h1>
+<p>The <strong>Python for Land-use Suitability Analysis Tools</strong> (PyLUSAT) is an
+open-source Python package dedicated for GIS-based land-use suitability
+modeling.
+This QGIS plugin provides interfaces to all functions in PyLUSAT to
+allow easy access and better integration into the QGIS <em>processing
+framework</em>.</p>
+<p><span class="raw-html-m2r"><img alt="pylusatq" height="600" src="screenshot/plugin_gui_mac.png"/></span></p>
+<p>For more information of PyLUSAT toolkit: <a class="reference external" href="https://github.com/chjch/pylusat">https://github.com/chjch/pylusat</a> or <a class="reference external" href="https://pypi.org/project/pylusat/">https://pypi.org/project/pylusat/</a></p>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Windows (Windows 7, Windows 10 recommended) or macOS.</p></li>
+<li><p><em>QGIS version</em> 3.16 or higher (recommended).</p></li>
+</ul>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h2>
+<section id="set-up-pylusat">
+<h3>1. Set up PyLUSAT<a class="headerlink" href="#set-up-pylusat" title="Permalink to this headline">#</a></h3>
+<p><strong>In Windows:</strong></p>
+<ol class="arabic">
+<li><p>We suggest two ways to set up your computer for PyLUSAT.<span class="raw-html-m2r"><br/></span>
+<strong>For beginners:</strong> <span class="raw-html-m2r"><ol type="a"></ol></span></p>
+<blockquote>
+<div><p><span class="raw-html-m2r"><li></li></span> Visit <span class="raw-html-m2r"><a href="https://github.com/chjch/pylusat-qgis">PyLUSAT
+GitHub repository</a></span>. Click <span class="raw-html-m2r"><b>Code</b></span>, and then <span class="raw-html-m2r"><b>Download ZIP</b></span>
+to download the <span class="raw-html-m2r"><i>pylusat-qgis</i></span> repository.<span class="raw-html-m2r"><br/></span>
+<span class="raw-html-m2r"><li></li></span>Copy <code class="docutils literal notranslate"><span class="pre">pylusat_installer.bat</span></code>, paste it under QGIS folder in your
+system. This file will install the prerequisite packages needed to use PyLUSATQ.
+<span class="raw-html-m2r"><li></li></span><span class="raw-html-m2r"><b>Right Click</b></span> the copied <span class="raw-html-m2r"><i>pylusat_installer.bat</i></span> to
+<span class="raw-html-m2r"><b>Run as administrator</b></span>.</p>
+</div></blockquote>
+<p>&lt;/ol&gt;<span class="raw-html-m2r"><br/></span></p>
+<dl class="simple">
+<dt><strong>OR, if you are familiar to work with terminals:</strong><span class="raw-html-m2r"><br/></span></dt><dd><p>Visit <span class="raw-html-m2r"><a href="https://github.com/chjch/pylusat-qgis">PyLUSAT
+GitHub repository</a></span>.
+Copy and paste the code in <em>pylusat_installer.bat</em> to your terminal
+under the QGIS folder and run it.<span class="raw-html-m2r"><br/></span></p>
+</dd>
+</dl>
+</li>
+</ol>
+<blockquote>
+<div><p><strong>Note</strong>:<span class="raw-html-m2r"><br/></span>
+The <code class="docutils literal notranslate"><span class="pre">pylusat_installer.bat</span></code> file helps you clean your environment and
+install proper pre-required packages. Noted that: <span class="raw-html-m2r"><br/></span> 1. we use <code class="docutils literal notranslate"><span class="pre">pipwin</span></code>
+instead of <code class="docutils literal notranslate"><span class="pre">pip</span></code> or <code class="docutils literal notranslate"><span class="pre">conda</span></code> considering the compatibility of QGIS and the
+packages.<span class="raw-html-m2r"><br/></span> 2. we apply <code class="docutils literal notranslate"><span class="pre">pipwin</span> <span class="pre">refresh</span></code> to force a cache rebuild in case
+any potential conflicts.<span class="raw-html-m2r"><br/></span> For more information about the PyLUSAT
+plugin, please visit <a class="reference external" href="https://github.com/chjch/pylusat">https://github.com/chjch/pylusat</a>.</p>
+</div></blockquote>
+<ol class="arabic">
+<li><p>In the pop-up window:</p>
+<a class="reference external image-reference" href="screenshot/installer_terminal.png"><img alt="installer terminal" src="screenshot/installer_terminal.png"/></a>
+<ol type="a">
+<li><b>Specify your root folder of QGIS</b>:The same where you place the installer.
 
-            -  For example C:\Program Files\QGIS 3.29.7
+   -  For example C:\Program Files\QGIS 3.29.7
 
-            <li><b>Is the QGIS a long term release [Y/N]</b>:
-            Refer to the version you installed. Type <b>Y</b> for long term release.
-            <b>N</b> for short term release.</li>
+   <li><b>Is the QGIS a long term release [Y/N]</b>:
+   Refer to the version you installed. Type <b>Y</b> for long term release.
+   <b>N</b> for short term release.</li>
 
-            -  The easiest way to identify this is by Opening QGIS and seeing if there is a banner on the splash screen labeling it as a long term release.
+   -  The easiest way to identify this is by Opening QGIS and seeing if there is a banner on the splash screen labeling it as a long term release.
 
-          </li></ol></li>
-          <li><p>Press <strong>Enter</strong> key and wait for the installation to complete.</p></li>
-          </ol>
-          <p><strong>In macOS:</strong>
-          Use <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pylusat</span></code> in Python Command Prompt of <strong>QGIS</strong>.</p>
-          </section>
-          <section id="install-pylusatq-plugin">
-          <h3>2. Install PyLUSATQ plugin<a class="headerlink" href="#install-pylusatq-plugin" title="Permalink to this headline">#</a></h3>
-          <p><span class="raw-html-m2r"><img alt="QGIS toolbar with plugin installation option" src="screenshot/install_plugin_dropdown.png" width="700"/></span></p>
-          <ul class="simple">
-          <li><p>Go to <strong>Plugins</strong> -&gt; <strong>Manage and Install Plugins</strong>.</p></li>
-          </ul>
-          <p><span class="raw-html-m2r"><img alt="QGIS plugin window with PyLUSATQ as search result" src="screenshot/plugin_search.png" width="700"/></span></p>
-          <ul class="simple">
-          <li><p>In the <strong>Search</strong> bar, type <strong>PyLUSATQ</strong> (be sure to CHECK <strong>Show also experimental plugins</strong> in the <strong>Settings</strong>).</p></li>
-          <li><p>Click <strong>Install Experimental Plugin</strong> to install PyLUSATQ.</p></li>
-          <li><p>Wait for a <strong>Plugin Installed Successfully</strong> Pop-Up</p></li>
-          <li><p>Close the QGIS application and re-open it to force a refresh of the installed plugins</p></li>
-          <li><p>In the processing toolbar search for the PyLUSATQ icon and dropdown</p></li>
-          </ul>
-          </section>
-          </section>
-          </section>
+</li></ol></li>
+<li><p>Press <strong>Enter</strong> key and wait for the installation to complete.</p></li>
+</ol>
+<p><strong>In macOS:</strong>
+Use <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pylusat</span></code> in Python Command Prompt of <strong>QGIS</strong>.</p>
+</section>
+<section id="install-pylusatq-plugin">
+<h3>2. Install PyLUSATQ plugin<a class="headerlink" href="#install-pylusatq-plugin" title="Permalink to this headline">#</a></h3>
+<p><span class="raw-html-m2r"><img alt="QGIS toolbar with plugin installation option" src="screenshot/install_plugin_dropdown.png" width="700"/></span></p>
+<ul class="simple">
+<li><p>Go to <strong>Plugins</strong> -&gt; <strong>Manage and Install Plugins</strong>.</p></li>
+</ul>
+<p><span class="raw-html-m2r"><img alt="QGIS plugin window with PyLUSATQ as search result" src="screenshot/plugin_search.png" width="700"/></span></p>
+<ul class="simple">
+<li><p>In the <strong>Search</strong> bar, type <strong>PyLUSATQ</strong> (be sure to CHECK <strong>Show also experimental plugins</strong> in the <strong>Settings</strong>).</p></li>
+<li><p>Click <strong>Install Experimental Plugin</strong> to install PyLUSATQ.</p></li>
+<li><p>Wait for a <strong>Plugin Installed Successfully</strong> Pop-Up</p></li>
+<li><p>Close the QGIS application and re-open it to force a refresh of the installed plugins</p></li>
+<li><p>In the processing toolbar search for the PyLUSATQ icon and dropdown</p></li>
+</ul>
+</section>
+</section>
+</section>
 
         </article>
       </div>
