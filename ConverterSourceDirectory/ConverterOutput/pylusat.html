@@ -5,15 +5,14 @@
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" />
 
-    <meta name="generator" content="sphinx-4.5.0, furo 2022.04.07"/>
-        <title>PyLUSAT for QGIS - GALUP documentation - GALUP documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=68f4518137b9aefe99b631505a2064c3c42c9852" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
-    
+    <meta name="generator" content="sphinx-4.4.0, furo 2022.04.07"/>
+        <title>PyLUSAT for QGIS - GALUP documentation</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=68f4518137b9aefe99b631505a2064c3c42c9852" />
+      <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+      <link rel="stylesheet" type="text/css" href="_static/customcss.css"/>
+ 
     
 
 
@@ -44,6 +43,59 @@
       document.body.dataset.theme = localStorage.getItem("theme") || "auto";
     </script>
     
+    <nav class="navbar shadow navbegone navbar-expand-lg short fixed-top navbar-themed">
+      <div class="container-lg" id="banner">
+        <!-- <div class="row"> -->
+          <div class="col-lg-2">
+            <a class="navbar-brand" href="../index.html">
+            <img class="navbar-brand-logo" src="../GithubPagesImages/GALUP-logo-final-color-2020.svg" alt="GALUP Logo" width="45">
+            &nbsp;&nbsp;GALUP Training</a>    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        <div class="left collapse navbar-collapse padme navbottom" id="navbarNav">
+          <!-- <div id="navbar-center"> -->
+            <ul class="navbar-nav">
+              <li class="nav-item hov">
+                <a class="nav-link active" aria-current="page" href="pylusat.html">Install PyLUSATQ</a>
+              </li>
+              <li class="nav-item hov">
+                <a class="nav-link active" aria-current="page" href="Tools.html">Documentation</a>
+              </li>
+              <li class="nav-item hov">
+                <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+              </li>
+              <li class="nav-item hov">
+                <a class="nav-link active" aria-current="page" href="#">Publication</a>
+              </li>
+            </ul>
+          </div>
+      <!-- </div> -->
+      <div id="navbar-end">
+        <div class="navbar-end-item navbottom">
+          <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/chjch/pylusat">
+                <img src="https://img.shields.io/pypi/v/pylusat?color=br&label=pylusat%20version">
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link linkalign" href="https://github.com/SERVIR-WA/GALUP" rel="noopener" target="_blank" title="GitHub"><span><i class ="fa fa-fw fa-github"></i></span>
+              <label class="sr-only">GitHub</label></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link linkalign" href="https://twitter.com/galupghana" rel="noopener" target="_blank" title="Twitter"><span><i class="fa fa-fw fa-twitter"></i></span>
+              <label class="sr-only">Twitter</label></a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+  </nav>
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="svg-toc" viewBox="0 0 24 24">
@@ -117,7 +169,7 @@
 
 
 
-<div class="page">
+<div class="container-xl">
   <header class="mobile-header">
     <div class="header-left">
       <label class="nav-overlay-icon" for="__navigation">
@@ -137,390 +189,240 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
     </div>
   </header>
-  <aside class="sidebar-drawer">
-    <div class="sidebar-container">
-      
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
-  
-  
-  <span class="sidebar-brand-text">GALUP  documentation</span>
-  
-</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
-  <input type="hidden" name="check_keywords" value="yes">
-  <input type="hidden" name="area" value="default">
-</form>
-<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  
-</div>
-</div>
+  <div class="row">
 
-      </div>
-      
-    </div>
-  </aside>
-  <div class="main">
-    <div class="content">
-      <div class="article-container">
-        <a href="#" class="back-to-top muted-link">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
-          </svg>
-          <span>Back to top</span>
-        </a>
-        <div class="content-icon-container"><div class="theme-toggle-container theme-toggle-content">
-            <button class="theme-toggle">
-              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
-              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
-              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
-              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
-            </button>
-          </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
-            <div class="visually-hidden">Toggle table of contents sidebar</div>
-            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
-          </label>
+    <aside class="sidebar-drawer col-12 col-md-3 bd-sidebar">
+      <div class="toc-sticky containme">
+      <div class="sidebar-container ">
+        <div class="sidebar-sticky">
+          <a class="sidebar-brand" href="index.html">
+            <!-- <span class="sidebar-brand-text">Contents</span> -->
+          </a>
+          <form class="sidebar-search-container" method="get" action="search.html" role="search">
+            <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+            <input type="hidden" name="check_keywords" value="yes">
+            <input type="hidden" name="area" value="default">
+          </form>
+      <div id="searchbox"></div>
+      <div class="sidebar-scroll">
+        <div class="sidebar-tree sidefont">
+          <ul>
+            <li class="has-children">
+              <a class="hov reference internal" href="Training1ReadMe.html"><b>Land-Use Suitability Analysis with QGIS Tools</b></a>
+              <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox" checked>
+              <label for="toctree-checkbox-1">
+              <div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label>
+              <ul>
+                <li><a class="reference internal hov" href="Training1Module1.html">1-1: Software and Data Preparation</a></li>
+                <li><a class="reference internal hov" href="Training1Module2.html">1-2: Introduction to LUCIS-OPEN Tools for QGIS</a></li>
+                <li><a class="reference internal hov" href="Training1Module3.html">1-3: Create Suitability Models with QGIS Graphical Modeler</a></li>
+                <li><a class="reference internal hov" href="Training1Module4.html">1-4: Aggregate Results to Make Land-Use Decisions</a></li>
+              </ul>
+            </li>
+            <li class="has-children">
+              <a class="hov reference internal" href="Training2ReadMe.html"><b>Introduction to Satellite Remote Sensing</b></a>
+              <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"><label for="toctree-checkbox-2">
+                <div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label>
+                <ul>
+                  <li><a class="reference internal hov" href="Training2Module1.html">2-1: Introduction to Remote Sensing (RS)</a></li>
+                  <li><a class="reference internal hov" href="Training2Module2.html">2-2: RS Applications using Google Earth Engine</a></li>
+                  <li><a class="reference internal hov" href="Training2Module3.html">2-3: Common RS Indices and Environmental Variables</a></li>
+                  <li><a class="reference internal hov" href="Training2Module4.html">2-4: Land Cover Classification</a></li>
+                </ul>
+            </li>
+            <li class="has-children"><a class="hov reference internal" href="Training3ReadMe.html"><b>Integrated Decision Units for Land Use Suitability Modeling</b></a>
+              <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"><label for="toctree-checkbox-3">
+                <div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label>
+                <ul>
+                  <li> <a class="reference internal hov" href="Training3Module1.html">3-1: Integrated Decision Units (IDUs) for Land Use Suitability Modeling</a>
+                  </li>
+                </ul>
+            </li>
+          </ul>
         </div>
-        <article role="main">
-          <section id="pylusat-for-qgis-galup-documentation">
-<h1>PyLUSAT for QGIS - GALUP documentation<a class="headerlink" href="#pylusat-for-qgis-galup-documentation" title="Permalink to this headline">#</a></h1>
-<div class="container-lg docutils container" id="banner">
-<div class="col-lg-2 docutils container">
-<p><a class="reference external" href="../index.html">GALUP Logo   GALUP Training</a></p>
-</div>
-<div class="left collapse navbar-collapse padme navbottom docutils container" id="navbarnav">
-<ul class="simple">
-<li><p><a class="reference external" href="pylusat.html">Install PyLUSATQ</a></p></li>
-<li><p><a class="reference external" href="Tools.html">Documentation</a></p></li>
-<li><p><a class="reference external" href="Gallery.html">Gallery</a></p></li>
-<li><p><a class="reference external" href="Publication.html">Publication</a></p></li>
-</ul>
-</div>
-<div class="docutils container" id="navbar-end">
-<div class="navbar-end-item navbottom docutils container">
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/chjch/pylusat"><img alt="image1" src="vertopal_6f1619dd538d4a0e84c91c2582d5671a/40a36b23621409c25164095e015b4e2c10f5aafb.svg"/></a></p></li>
-<li><p><a class="reference external" href="https://github.com/SERVIR-WA/GALUP">GitHub</a></p></li>
-<li><p><a class="reference external" href="https://twitter.com/galupghana">Twitter</a></p></li>
-</ul>
-</div>
-</div>
-</div>
-<p><img alt="image2" src="vertopal_6f1619dd538d4a0e84c91c2582d5671a/74cbc5153cc86713a73b071b3169a78c2fd60d59.svg"/>
-Menu
-<img alt="image3" class="feather-menu" src="vertopal_6f1619dd538d4a0e84c91c2582d5671a/133fee49465d44318fefeba25854cd03e2cc0411.svg"/>
-Expand
-<img alt="image4" class="feather-chevron-right" src="vertopal_6f1619dd538d4a0e84c91c2582d5671a/eff3e81134581b13742cc8b89798fdf2b1e29260.svg"/>
-Light mode
-<img alt="image5" class="feather-sun" src="vertopal_6f1619dd538d4a0e84c91c2582d5671a/3dfc64d04d4ae84fe8e052bd771a78037b0a2517.svg"/>
-Dark mode
-<img alt="image6" class="icon-tabler-moon" src="vertopal_6f1619dd538d4a0e84c91c2582d5671a/5ca97773da665985bb10fb9699e0b32c7de11c49.svg"/>
-Auto light/dark mode
-<img alt="image7" class="icon-tabler-shadow" src="vertopal_6f1619dd538d4a0e84c91c2582d5671a/fabd3565c3a897151dff917825e501f77c51c7ce.svg"/></p>
-<div class="visually-hidden docutils container">
-<p>Hide navigation sidebar</p>
-</div>
-<div class="visually-hidden docutils container">
-<p>Hide table of contents sidebar</p>
-</div>
-<div class="container-xl docutils container">
-<div class="header-left docutils container">
-<div class="visually-hidden docutils container">
-<p>Toggle site navigation sidebar</p>
-</div>
-</div>
-<div class="header-center docutils container">
-<p>` &lt;index.html&gt;`__</p>
-<div class="brand docutils container">
-<p>GALUP documentation</p>
-</div>
-</div>
-<div class="header-right docutils container">
-<div class="theme-toggle-container theme-toggle-header docutils container">
-<div class="visually-hidden docutils container">
-<p>Toggle Light / Dark / Auto color theme</p>
-</div>
-<p><img alt="image8" class="theme-icon-when-auto" src="vertopal_6f1619dd538d4a0e84c91c2582d5671a/ccbfec2207e262dda7dada0c681cb4bc20900690.svg"/> <img alt="image9" class="theme-icon-when-dark" src="vertopal_6f1619dd538d4a0e84c91c2582d5671a/84a4ad7c5336a2504f0ff3dc084c65eec6609dd8.svg"/> <img alt="image10" class="theme-icon-when-light" src="vertopal_6f1619dd538d4a0e84c91c2582d5671a/1eb4e361c552b54579445e973fd023debeffa344.svg"/></p>
-</div>
-<div class="visually-hidden docutils container">
-<p>Toggle table of contents sidebar</p>
-</div>
-</div>
-<div class="row docutils container">
-<div class="toc-sticky containme docutils container">
-<div class="sidebar-container docutils container">
-<div class="sidebar-sticky docutils container">
-<p>` &lt;index.html&gt;`__</p>
-<div class="sidebar-scroll docutils container">
-<div class="sidebar-tree sidefont docutils container">
-<ul>
-<li><p><a class="reference external" href="Training1ReadMe.html">Land-Use Suitability Analysis with QGIS
-Tools</a></p>
-<div class="visually-hidden docutils container">
-<p>Toggle child pages in navigation</p>
-</div>
-<ul class="simple">
-<li><p><a class="reference external" href="Training1Module1.html">1-1: Software and Data
-Preparation</a></p></li>
-<li><p><a class="reference external" href="Training1Module2.html">1-2: Introduction to LUCIS-OPEN Tools for
-QGIS</a></p></li>
-<li><p><a class="reference external" href="Training1Module3.html">1-3: Create Suitability Models with QGIS
-Graphical Modeler</a></p></li>
-<li><p><a class="reference external" href="Training1Module4.html">1-4: Aggregate Results to Make Land-Use
-Decisions</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference external" href="Training2ReadMe.html">Introduction to Satellite Remote
-Sensing</a></p>
-<div class="visually-hidden docutils container">
-<p>Toggle child pages in navigation</p>
-</div>
-<ul class="simple">
-<li><p><a class="reference external" href="Training2Module1.html">2-1: Introduction to Remote Sensing
-(RS)</a></p></li>
-<li><p><a class="reference external" href="Training2Module2.html">2-2: RS Applications using Google Earth
-Engine</a></p></li>
-<li><p><a class="reference external" href="Training2Module3.html">2-3: Common RS Indices and Environmental
-Variables</a></p></li>
-<li><p><a class="reference external" href="Training2Module4.html">2-4: Land Cover
-Classification</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference external" href="Training3ReadMe.html">Integrated Decision Units for Land Use
-Suitability Modeling</a></p>
-<div class="visually-hidden docutils container">
-<p>Toggle child pages in navigation</p>
-</div>
-<ul class="simple">
-<li><p><a class="reference external" href="Training3Module1.html">3-1: Integrated Decision Units (IDUs) for
-Land Use Suitability
-Modeling</a></p></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p>main col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content</p>
-<blockquote>
-<div><div class="content docutils container">
-<div class="article-container docutils container">
-<p><a class="reference external" href="#">|image11| Back to top</a></p>
-<div class="content-icon-container docutils container">
-<p>theme-toggle-container theme-toggle-content</p>
-<blockquote>
-<div><div class="visually-hidden docutils container">
-<p>Toggle Light / Dark / Auto color theme</p>
-</div>
-<p><img alt="image12" class="theme-icon-when-auto" src="vertopal_6f1619dd538d4a0e84c91c2582d5671a/ccbfec2207e262dda7dada0c681cb4bc20900690.svg"/> <img alt="image13" class="theme-icon-when-dark" src="vertopal_6f1619dd538d4a0e84c91c2582d5671a/84a4ad7c5336a2504f0ff3dc084c65eec6609dd8.svg"/> <img alt="image14" class="theme-icon-when-light" src="vertopal_6f1619dd538d4a0e84c91c2582d5671a/1eb4e361c552b54579445e973fd023debeffa344.svg"/></p>
-</div></blockquote>
-<div class="visually-hidden docutils container">
-<p>Toggle table of contents sidebar</p>
-</div>
-</div>
-<div class="section docutils container" id="pylusat-for-qgis">
-<p class="rubric" id="id1">PyLUSAT for
-QGIS<a class="reference external" href="#pylusat-for-qgis">#</a></p>
-<p>The <strong>Python for Land-use Suitability Analysis Tools</strong>
-(PyLUSAT) is an open-source Python package dedicated
-for GIS-based land-use suitability modeling. This QGIS
-plugin provides interfaces to all functions in PyLUSAT
-to allow easy access and better integration into the
-QGIS <em>processing framework</em>.</p>
-<p><a class="reference external" href="../screenshot/pylusatq_native.png">pylusatq</a>
-For more information of PyLUSAT toolkit:
-<a class="reference external" href="https://github.com/chjch/pylusat">https://github.com/chjch/pylusat</a> or
-<a class="reference external" href="https://pypi.org/project/pylusat/">https://pypi.org/project/pylusat/</a></p>
-<div class="section docutils container" id="requirements">
-<p class="rubric" id="id2">Requirements<a class="reference external" href="#requirements">#</a></p>
-<ul class="simple">
-<li><p>Windows (Windows 7, Windows 10 recommended) or
-macOS.</p></li>
-<li><p><em>QGIS version</em> 3.16 or higher (recommended).</p></li>
-</ul>
-</div>
-<div class="section docutils container" id="installation">
-<p class="rubric" id="id3">Installation<a class="reference external" href="#installation">#</a></p>
-<div class="section docutils container" id="set-up-pylusat">
-<p class="rubric" id="id4">1. Set up
-PyLUSAT<a class="reference external" href="#set-up-pylusat">#</a></p>
-<p><strong>In Windows:</strong></p>
-<ol class="arabic">
-<li><p>We suggest two ways to set up your computer
-for PyLUSAT.
-<strong>For beginners:</strong></p>
-<blockquote>
-<div><div class="docutils container">
-<div class="line-block">
-<div class="line">a. Visit <a class="reference external" href="https://github.com/chjch/pylusat-qgis">PyLUSAT GitHub
-repository</a>
-Click <strong>Code</strong>, and then <strong>Download
-ZIP</strong> to download     the
-<em>pylusat-qgis</em> repository.</div>
-<div class="line">b. Copy `pylusat_installer.bat`,
-paste it under QGIS folder in your
-system.</div>
-<div class="line">c. Right Click the copied
-<em>pylusat_installer.bat</em> to <strong>Run as
-administrator</strong>.</div>
-</div>
-</div>
-</div></blockquote>
-<dl class="simple">
-<dt><strong>OR, if you are familiar to work with terminals:</strong></dt><dd><p>Visit <a class="reference external" href="https://github.com/chjch/pylusat-qgis">PyLUSAT GitHub
-repository</a>.
-Copy and paste the code in
-<em>pylusat_installer.bat</em> to your terminal
-under the QGIS folder and run it.</p>
-</dd>
-</dl>
-<blockquote>
-<div><div class="docutils container">
-<p><strong>Note</strong>:
-The <code class="docutils literal notranslate"><span class="pre">pylusat_installer.bat</span></code> file
-helps you clean your environment and
-install proper pre-required packages.
-Noted that:
-1. we use <code class="docutils literal notranslate"><span class="pre">pipwin</span></code> instead of <code class="docutils literal notranslate"><span class="pre">pip</span></code>
-or <code class="docutils literal notranslate"><span class="pre">conda</span></code> considering the
-compatibility of QGIS and     the
-packages.
-2. we apply <code class="docutils literal notranslate"><span class="pre">pipwin</span> <span class="pre">refresh</span></code> to force
-a cache rebuild in case any potential
-conflicts.
-    For more information about the
-PyLUSAT plugin, please visit
-    <a class="reference external" href="https://github.com/chjch/pylusat">https://github.com/chjch/pylusat</a>.</p>
-</div>
-</div></blockquote>
-</li>
-<li><p>In the pop-up window:</p>
-<ol class="loweralpha simple">
-<li><p><strong>Specify your root folder of QGIS</strong>: The
-same where you place the installer.</p></li>
-<li><p><strong>Is the QGIS a long term release [Y/N]</strong>:
-Refer to the version you installed. Type
-<strong>Y</strong> for long term release. <strong>N</strong> for
-short term release.</p></li>
-</ol>
-</li>
-<li><p>Press <strong>Enter</strong> key and wait for the
-installation to complete.</p></li>
-</ol>
-<p><strong>In macOS:</strong> Use <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pylusat</span></code> in
-Python Command Prompt of <strong>QGIS</strong>.</p>
-</div>
-<div class="section docutils container" id="install-pylusat-plugin">
-<p class="rubric" id="id5">2. Install PyLUSAT
-plugin<a class="reference external" href="#install-pylusat-plugin">#</a></p>
-<ol class="arabic">
-<li><p>Download <strong>PyLUSAT plugin</strong> from
-<a class="reference external" href="https://plugins.qgis.org/plugins/pylusatq/">https://plugins.qgis.org/plugins/pylusatq/</a></p></li>
-<li><p>Find <strong>Plugins</strong> on the top panel in your
-<strong>QGIS Desktop</strong>, Click <strong>Manage and install
-plugins…</strong></p></li>
-<li><p>In <strong>Install from ZIP</strong> interface, browse and
-select the PyLUSAT ZIP file you download.</p></li>
-<li><p>Click Install Plugin, once finished, restart
-QGIS. ..</p>
-<blockquote>
-<div><div class="docutils container">
-<p><strong>Note:</strong>Once you click <strong>Install Plugin</strong>, you
-might see a pump-up window noticing
-“Couldn’t load plugin pylusatq”. Don’t
-worry, the installation will succeed
-after you restart QGIS.</p>
-</div>
-</div></blockquote>
-</li>
-<li><p>Now you can find PyLUSAT tools in
-<strong>Processing Toolbox</strong> panel.</p></li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-<div class="bottom-of-page docutils container">
-<div class="left-details docutils container">
-<div class="copyright docutils container">
-<p>Copyright © 2022, The GALUP Team</p>
-</div>
-<p>Made with <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> and
-<a class="reference external" href="https://pradyunsg.me">@pradyunsg</a>’s
-<a class="reference external" href="https://github.com/pradyunsg/furo">Furo</a></p>
-</div>
-<div class="right-details docutils container">
-</div>
-</div>
-</div>
-</div></blockquote>
-<div class="toc-sticky containme docutils container">
-<div class="toc-title-container docutils container">
-<p>Contents</p>
-</div>
-<div class="toc-tree-container docutils container">
-<div class="toc-tree docutils container">
-<ul class="simple">
-<li><p><a class="reference external" href="#">PyLUSAT for QGIS</a></p>
-<ul>
-<li><p><a class="reference external" href="#requirements">Requirements</a></p></li>
-<li><p><a class="reference external" href="#installation">Installation</a></p>
-<ul>
-<li><p><a class="reference external" href="#set-up-pylusat">1. Set up PyLUSAT</a></p></li>
-<li><p><a class="reference external" href="#install-pylusat-plugin">2. Install PyLUSAT
-plugin</a></p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-        </article>
-      </div>
-      <footer>
-        
-        <div class="related-pages">
-          
-          
         </div>
-        <div class="bottom-of-page">
-          <div class="left-details">
-            <div class="copyright">
-                Copyright &#169; 2022, The GALUP Team
+      </div>
+   
+      </div>
+       
+      </div>
+    </aside>
+  
+    <div class="main col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content">
+      <div class="content">
+        <div class="article-container">
+          <a href="#" class="back-to-top muted-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+            </svg>
+            <span>Back to top</span>
+          </a>
+          <div class="content-icon-container"><div class="theme-toggle-container theme-toggle-content">
+              <button class="theme-toggle">
+                <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+                <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+                <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+                <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+              </button>
             </div>
-            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            <label class="toc-overlay-icon toc-content-icon" for="__toc">
+              <div class="visually-hidden">Toggle table of contents sidebar</div>
+              <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+            </label>
+          </div>
+          <article role="main">
+            <section id="pylusat-for-qgis">
+              <h1>PyLUSAT for QGIS<a class="headerlink" href="#pylusat-for-qgis" title="Permalink to this headline">#</a></h1>
+              <p>The <strong>Python for Land-use Suitability Analysis Tools</strong> (PyLUSAT) is an
+              open-source Python package dedicated for GIS-based land-use suitability
+              modeling.
+              This QGIS plugin provides interfaces to all functions in PyLUSAT to
+              allow easy access and better integration into the QGIS <em>processing
+              framework</em>.</p>
+              <p><span class="raw-html-m2r"><img alt="pylusatq" height="600" src="../GithubPagesImages/plugin_gui_mac.png"/></span></p>
+              <p>For more information of PyLUSAT toolkit: <a class="reference external" href="https://github.com/chjch/pylusat">https://github.com/chjch/pylusat</a> or <a class="reference external" href="https://pypi.org/project/pylusat/">https://pypi.org/project/pylusat/</a></p>
+              <section id="requirements">
+              <h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">#</a></h2>
+              <ul class="simple">
+              <li><p>Windows (Windows 7, Windows 10 recommended) or macOS.</p></li>
+              <li><p><em>QGIS version</em> 3.16 or higher (recommended).</p></li>
+              </ul>
+            </section>
+            <section id="installation">
+              <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h2>
+          <section id="set-up-pylusat">
+            <h3>1. Set up PyLUSAT<a class="headerlink" href="#set-up-pylusat" title="Permalink to this headline">#</a></h3>
+            <p><strong>In Windows:</strong></p>
+            <p>We suggest two ways to set up your computer for PyLUSAT.<span class="raw-html-m2r"><br/></span>
+            <strong>For beginners:</strong> <span class="raw-html-m2r"><ol type="a"></ol></span></p>
+            <blockquote>
+              <div><p>a. Visit <a class="reference external" href="https://github.com/chjch/pylusat-qgis">PyLUSAT GitHub repository</a>
+                Click <b>Code</b>, and then <b>Download ZIP</b> to download the <i>pylusat-qgis</i> repository.<br>
+                b. Copy <code class="docutils literal notranslate"><span class="pre">pylusat_installer.bat</span></code>, paste it under QGIS folder in your
+                system. This file will install the prerequisite packages needed to use PyLUSATQ.
+                <br>
+              c. Right Click the copied <i>pylusat_installer.bat</i> to
+              <b>Run as administrator</b>.</p>
+              </div>
+            </blockquote>
+            <dl class="simple">
+            <dt><strong>OR, if you are familiar to work with terminals:</strong><span class="raw-html-m2r"><br/></span></dt><dd><p>Visit <span class="raw-html-m2r"><a href="https://github.com/chjch/pylusat-qgis">PyLUSAT
+            GitHub repository</a></span>.
+            Copy and paste the code in <em>pylusat_installer.bat</em> to your terminal
+            under the QGIS folder and run it.<span class="raw-html-m2r"><br/></span></p>
+            </dd>
+            </dl>
+            </li>
+            </ol>
+            <blockquote>
+            <div><p><strong>Note</strong>:<span class="raw-html-m2r"><br/></span>
+            The <code class="docutils literal notranslate"><span class="pre">pylusat_installer.bat</span></code> file helps you clean your environment and
+            install proper pre-required packages. Noted that: <span class="raw-html-m2r"><br/></span> 1. we use <code class="docutils literal notranslate"><span class="pre">pipwin</span></code>
+            instead of <code class="docutils literal notranslate"><span class="pre">pip</span></code> or <code class="docutils literal notranslate"><span class="pre">conda</span></code> considering the compatibility of QGIS and the
+            packages.<span class="raw-html-m2r"><br/></span> 2. we apply <code class="docutils literal notranslate"><span class="pre">pipwin</span> <span class="pre">refresh</span></code> to force a cache rebuild in case
+            any potential conflicts.<span class="raw-html-m2r"><br/></span> For more information about the PyLUSAT
+            plugin, please visit <a class="reference external" href="https://github.com/chjch/pylusat">https://github.com/chjch/pylusat</a>.</p>
+            </div></blockquote>
+            <ol class="arabic">
+            <li><p>In the pop-up window:</p>
+            <a class="reference external image-reference" href="../GithubPagesImages/installer_terminal.png"><img alt="installer terminal" src="../GithubPagesImages/installer_terminal.png"/></a>
+            <ol type="a">
+            <li><b>Specify your root folder of QGIS</b>:The same where you place the installer.
+  
+              -  For example C:\Program Files\QGIS 3.29.7
+  
+              <li><b>Is the QGIS a long term release [Y/N]</b>:
+              Refer to the version you installed. Type <b>Y</b> for long term release.
+              <b>N</b> for short term release.</li>
+  
+              -  The easiest way to identify this is by Opening QGIS and seeing if there is a banner on the splash screen labeling it as a long term release.
+  
+            </li></ol></li>
+            <li><p>Press <strong>Enter</strong> key and wait for the installation to complete.</p></li>
+            </ol>
+            <p><strong>In macOS:</strong>
+            Use <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pylusat</span></code> in Python Command Prompt of <strong>QGIS</strong>.</p>
+            </section>
+            <section id="install-pylusatq-plugin">
+            <h3>2. Install PyLUSATQ plugin<a class="headerlink" href="#install-pylusatq-plugin" title="Permalink to this headline">#</a></h3>
+            <p><span class="raw-html-m2r"><img alt="QGIS toolbar with plugin installation option" src="../GithubPagesImages/install_plugin_dropdown.png" width="700"/></span></p>
+            <ul class="simple">
+            <li><p>Go to <strong>Plugins</strong> -&gt; <strong>Manage and Install Plugins</strong>.</p></li>
+            </ul>
+            <p><span class="raw-html-m2r"><img alt="QGIS plugin window with PyLUSATQ as search result" src="../GithubPagesImages/plugin_search.png" width="700"/></span></p>
+            <ul class="simple">
+            <li><p>In the <strong>Search</strong> bar, type <strong>PyLUSATQ</strong> (be sure to CHECK <strong>Show also experimental plugins</strong> in the <strong>Settings</strong>).</p></li>
+            <li><p>Click <strong>Install Experimental Plugin</strong> to install PyLUSATQ.</p></li>
+            <li><p>Wait for a <strong>Plugin Installed Successfully</strong> Pop-Up</p></li>
+            <li><p>Close the QGIS application and re-open it to force a refresh of the installed plugins</p></li>
+            <li><p>In the processing toolbar search for the PyLUSATQ icon and dropdown</p></li>
+            </ul>
+            </section>
+            </section>
+            </section>
+  
+          </article>
+        </div>
+        <footer>
+          
+          <div class="related-pages">
             
-            <a href="https://github.com/pradyunsg/furo">Furo</a>
             
           </div>
-          <div class="right-details">
-            <div class="icons">
+          <div class="bottom-of-page">
+            <div class="left-details">
+              <div class="copyright">
+                  Copyright &#169; 2022, The GALUP Team
+              </div>
+              Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+              
+              <a href="https://github.com/pradyunsg/furo">Furo</a>
               
             </div>
+            <div class="right-details">
+              <div class="icons">
+                
+              </div>
+            </div>
+          </div>
+          
+        </footer>
+        </div>
+      </div>
+    <aside class="toc-drawer col-12 col-md-3 bd-sidebar">
+      <div class="toc-sticky containme">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal navbar-brand" href="#">PyLUSAT for QGIS</a><ul>
+<li><a class="reference internal navbar-brand" href="#requirements">Requirements</a></li>
+<li><a class="reference internal navbar-brand" href="#installation">Installation</a><ul>
+<li><a class="reference internal navbar-brand" href="#set-up-pylusat">1. Set up PyLUSAT</a></li>
+<li><a class="reference internal navbar-brand" href="#install-pylusat-plugin">2. Install PyLUSAT plugin</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
           </div>
         </div>
-        
-      </footer>
-    </div>
-    <aside class="toc-drawer no-toc">
-      
+      </div>
       
       
     </aside>
+    </div>
   </div>
 </div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
